@@ -1,0 +1,34 @@
+@import "../../styles/colors.scss";
+
+.locations-container {
+  color: $grey-1;
+  header {
+    font-size: 40px;
+  }
+  .Card-Description{
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    min-height: 150px;
+    flex: 0 0 97%;
+    font-size: 12px;
+  }
+  .Hide-Arrow{
+    display: none;
+  }
+  
+  .box-shadow:hover{
+    box-shadow:1px 1px 6px 0px #ececef;
+  }
+  
+  }
+  @media(max-width: 845px){
+    .Card-Description{
+      max-width: 18rem;
+    }
+    .arrow{
+      display: none;
+    }
+  }

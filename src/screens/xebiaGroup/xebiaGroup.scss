@@ -1,0 +1,17 @@
+@import "../../styles/colors.scss";
+
+.xeGroup-container {
+  color: $grey-1;
+  header {
+    font-size: 40px;
+  }
+  .container{
+      & > div{
+          width: 600px;
+          margin: 0 auto;
+      }
+  }
+  .mb-4{
+    margin-bottom: 6.5rem !important;
+  }
+}

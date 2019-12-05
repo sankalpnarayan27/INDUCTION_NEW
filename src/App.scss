@@ -1,0 +1,14 @@
+@import "./styles/media.scss";
+@import "./styles/colors.scss";
+
+.screen-container {
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  .grey2-bg {
+    background: $grey-2;
+    color: white !important;
+  }
+}

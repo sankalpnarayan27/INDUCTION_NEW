@@ -1,0 +1,17 @@
+http://www.bestjquery.com/?x6QF5jhM - navigation
+http://www.bestjquery.com/?7blEwxF6 - life at xebia - just images
+http://www.starts360.com - 360 degree tour
+
+https://codyhouse.co/demo/3d-curtain-template/index.html - scroll animation
+https://codemyui.com/fancy-page-scroll-effects-using-velocityjs/ - on page scroll animation
+
+
+<!-- code -->
+
+* http://www.bestjquery.com/demo/jquery-image-hover-effect/page/2/ = this is link for card flip
+* https://codepen.io/cojdev/pen/EQZVRN = this is link for card flip
+* https://colorlib.com/wp/jquery-map-plugins/ = maps
+* https://www.bestjquery.com/?UzqJRH2z = on click for policy
+* https://www.bestjquery.com/?7wDTu77W = on click for policy
+
+on scroll : http://www.iambinadam.org/en/

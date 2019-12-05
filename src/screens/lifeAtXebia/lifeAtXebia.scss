@@ -1,0 +1,135 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+.life-container {
+  min-height: 100vh;
+  @include medium {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  color: $grey-1;
+  .image-section {
+    display: none;
+    @include medium {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      overflow: hidden;
+      img {
+        max-height: 100%;
+      }
+      div {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 1;
+        padding: 0 0 0 75px;
+        color: white;
+        font-size: 10vh;
+        font-weight: 500;
+        max-width: calc(50vw - 20%);
+        span {
+          font-size: 8vh;
+        }
+      }
+    }
+  }
+  .data-section {
+    header {
+      font-size: 40px;
+    }
+    .policy-cards {
+      & > div {
+        margin: 20px;
+        width: 220px;
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid $grey-3;
+        .card-heading {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .card-content {
+          font-size: 12px;
+          padding-top: 20px;
+        }
+        &:hover {
+          user-select: none;
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.15) !important;
+        }
+      }
+    }
+  }
+}
+.events-section {
+  opacity: 1;
+  margin: auto 0;
+  text-align: center;
+  & > header {
+    font-size: 40px;
+    color: $grey-1 !important;
+    margin: 0 auto;
+  }
+  .carousel-item{
+    
+   
+    height: 400px;
+    div {
+      width: 50%;
+      display: table-cell;
+      vertical-align: middle;
+      height: 350px;
+      text-align: -webkit-center;
+      padding: 15px ;
+    }
+  }
+
+  .carousel-item img{
+    min-width: 300px;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    float: right;
+  }
+  @mixin modal-fullscreen() {
+    padding: 0 !important;
+    
+    .modal-dialog {
+      width: calc(100% - 2.5rem);
+      height: calc(100% - 2.5rem);
+      margin: 10px;
+      padding: 10px;
+    }
+    
+    .modal-content {
+      height: auto;
+      min-height: 100%;
+      border: 0 none;
+      border-radius: 0;
+    }
+    
+  }
+  
+  @media (max-width: 767px) {
+    .modal-fullscreen-xs-down {
+      @include modal-fullscreen();
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .modal-fullscreen-sm-down {
+      @include modal-fullscreen();
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .modal-fullscreen-md-down {
+      @include modal-fullscreen();
+    }
+  }
+  
+  .modal-fullscreen {
+    @include modal-fullscreen();
+  }
+}

@@ -1,28 +1,22 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import "./pillars.scss";
-import peopleFirst from "../../assets/icons/team.svg";
-import sharingKnowledge from "../../assets/icons/meeting.svg";
-import customerIntimacy from "../../assets/icons/target.svg";
-import quality from "../../assets/icons/quality.svg";
+import XebiaValues from "./XebiaValues";
 import { Card, Button, Col, Row } from "react-bootstrap";
 
 const Pillars = () => {
 
   const [coeInfo, descriptionHandler] = useState({ Title: "", Description: "", Clicked: -1 });
 
-  const array = [
-    { Title: "People First", ShortDesc: "People First, Always", Src: peopleFirst, Description: "" },
-    { Title: "Sharing Knowledge", ShortDesc: "The more you share it, the more you grow", Src: sharingKnowledge, Description: "" },
-    { Title: "Customer Intimacy", ShortDesc: "We don't just create customers, we create relationships", Src: customerIntimacy, Description: "" },
-    { Title: "Quality", ShortDesc: "At Xebia Quality without compromise is the mantra", Src: quality, Description: "" }
-  ]
-
+  
+  useEffect(() => {
+    //console.log(coeInfo);
+  })
   const Values = props => {
-    let { Value, Clicked } = props;
+    let { Value, Clicked , Handler } = props;
     let askArrow = Clicked == Value ? "" : "Hide-Arrow";
     return (
       <div>
-        <div className="pillar-card">
+        <div className="pillar-card" onClick={ _=>Handler({Title: props.Title, Description: props.Description, Clicked: Value})}>
           <div>
             <img alt="people" src={props.Src} />
           </div>
@@ -48,7 +42,7 @@ const Pillars = () => {
       <header className="mb-4">Xebia's Values</header>
       <div className="pillar-grid text-center">
         {
-          array.map((x, i) => <Values {...x} key={i} />)
+          XebiaValues.map((x, i) => <Values {...x} key={i} Handler={descriptionHandler} Value={i} Clicked={coeInfo.Clicked} />)
         }
       </div>
       {

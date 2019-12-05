@@ -5,6 +5,7 @@ import events from "../../assets/icons/calendar.svg";
 import gallery from "../../assets/icons/attach.svg";
 import cares from "../../assets/icons/worldwide.svg";
 import bornImage from "../../assets/images/born.svg";
+import * as gPhotos from "./gallery.jsx";
 import { Modal, Button, Container, Row, Col } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel'
 const LifeAtXebia = () => {
@@ -28,11 +29,32 @@ const LifeAtXebia = () => {
       description: "Third Slide img elements must have an alt prop, either with meaningful text, or an empty string for decorative images "
     }
   ];
+  const allGallery = _ => {
+    let gal = [];
+    for (let x in gPhotos) {
+      gal.push({ name: x, src: gPhotos[x] });
+    }
+    return gal
+  }
   useEffect(_ => {
-    console.log(toggle);
-
+    
   });
 
+
+
+  const GalleryView = props => {
+
+
+
+    return (
+      <figure className="col-md-4">
+        <a href={props.Src} data-size="1600x1067">
+          <img alt="picture" src={props.Src}
+            className="img-fluid" />
+        </a>
+      </figure>
+    )
+  }
 
   return (
     <div>
@@ -84,9 +106,15 @@ const LifeAtXebia = () => {
             <Modal.Title>Gallery</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            No items to show
-        </Modal.Body>
+            <div class="row">
+              <div class="col-md-12">
+                {allGallery().map((x, i) => <GalleryView key={i} Src={x.src} Name={x.name} />)}
+              </div>
+            </div>
+          </Modal.Body>
           <Modal.Footer>
+
+
             {/*
             <Button variant="secondary" onClick={handleClose}>
               Close

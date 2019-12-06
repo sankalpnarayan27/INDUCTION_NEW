@@ -1,0 +1,13 @@
+@import "../../styles/colors.scss";
+
+.pillars-container {
+    color: $grey-1;
+    header {
+      font-size: 40px;
+      .locations-grid {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 2rem;
+        }
+    }
+}

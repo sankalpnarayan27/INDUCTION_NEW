@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/INDUCTION_NEW/static/css/main.30a9bc8a.chunk.css",
-    "main.js": "/INDUCTION_NEW/static/js/main.1a7b998e.chunk.js",
-    "main.js.map": "/INDUCTION_NEW/static/js/main.1a7b998e.chunk.js.map",
+    "main.css": "/INDUCTION_NEW/static/css/main.ebd9f346.chunk.css",
+    "main.js": "/INDUCTION_NEW/static/js/main.486eba16.chunk.js",
+    "main.js.map": "/INDUCTION_NEW/static/js/main.486eba16.chunk.js.map",
     "runtime-main.js": "/INDUCTION_NEW/static/js/runtime-main.23f6be59.js",
     "runtime-main.js.map": "/INDUCTION_NEW/static/js/runtime-main.23f6be59.js.map",
     "static/css/2.833dd627.chunk.css": "/INDUCTION_NEW/static/css/2.833dd627.chunk.css",
-    "static/js/2.946170f0.chunk.js": "/INDUCTION_NEW/static/js/2.946170f0.chunk.js",
-    "static/js/2.946170f0.chunk.js.map": "/INDUCTION_NEW/static/js/2.946170f0.chunk.js.map",
+    "static/js/2.23855180.chunk.js": "/INDUCTION_NEW/static/js/2.23855180.chunk.js",
+    "static/js/2.23855180.chunk.js.map": "/INDUCTION_NEW/static/js/2.23855180.chunk.js.map",
     "index.html": "/INDUCTION_NEW/index.html",
-    "precache-manifest.66a4e8d33ebbde683afd089d240dfc7d.js": "/INDUCTION_NEW/precache-manifest.66a4e8d33ebbde683afd089d240dfc7d.js",
+    "precache-manifest.3a4069aaf89ddbb1cdfe4cab765e4b1f.js": "/INDUCTION_NEW/precache-manifest.3a4069aaf89ddbb1cdfe4cab765e4b1f.js",
     "service-worker.js": "/INDUCTION_NEW/service-worker.js",
     "static/css/2.833dd627.chunk.css.map": "/INDUCTION_NEW/static/css/2.833dd627.chunk.css.map",
-    "static/css/main.30a9bc8a.chunk.css.map": "/INDUCTION_NEW/static/css/main.30a9bc8a.chunk.css.map",
+    "static/css/main.ebd9f346.chunk.css.map": "/INDUCTION_NEW/static/css/main.ebd9f346.chunk.css.map",
     "static/media/05101d77995fd17eed5a6340b0ec2e89.png": "/INDUCTION_NEW/static/media/05101d77995fd17eed5a6340b0ec2e89.05101d77.png",
     "static/media/07f5c25f4997aedd3416ca7527c084e3.png": "/INDUCTION_NEW/static/media/07f5c25f4997aedd3416ca7527c084e3.66eeab74.png",
     "static/media/19-198388_github-logo-github-git-hd-png-download.png": "/INDUCTION_NEW/static/media/19-198388_github-logo-github-git-hd-png-download.0d7d1746.png",
@@ -86,8 +86,8 @@
   "entrypoints": [
     "static/js/runtime-main.23f6be59.js",
     "static/css/2.833dd627.chunk.css",
-    "static/js/2.946170f0.chunk.js",
-    "static/css/main.30a9bc8a.chunk.css",
-    "static/js/main.1a7b998e.chunk.js"
+    "static/js/2.23855180.chunk.js",
+    "static/css/main.ebd9f346.chunk.css",
+    "static/js/main.486eba16.chunk.js"
   ]
 }

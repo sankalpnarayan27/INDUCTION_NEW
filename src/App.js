@@ -6,7 +6,7 @@ import Pillars from "./screens/pillars/pillars";
 import Clients from "./screens/clients/clients";
 import Policy from "./screens/policy/policy";
 import LifeAtXebia from "./screens/lifeAtXebia/lifeAtXebia";
-import Coe from "./screens/locations/coe";
+import Coe from "./screens/coe/coe";
 import XebiaGroup from "./screens/xebiaGroup/xebiaGroup";
 function App() {
   return (

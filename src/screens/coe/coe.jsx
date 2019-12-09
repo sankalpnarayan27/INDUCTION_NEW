@@ -8,27 +8,27 @@ import Ajay from '../../assets/images/ajay.jpg';
 const Coe = _ => {
     const coeList = [
         {
-            title: "Ajay Kabra",
-            smallDescription: "COE Bangalore",
+            title: "COE 1",
+            smallDescription: "COE 1 Description",
             description:"One ",
             src: Ajay
         },
         {
-            title: "Ajay Kabra",
-            smallDescription: "COE Bangalore",
-            description:"Two",
+            title: "COE 2",
+            smallDescription: "COE 2 Description",
+            description:"One ",
             src: Ajay
         },
         {
-            title: "Ajay Kabra",
-            smallDescription: "COE Bangalore",
-            description:"Three",
+            title: "COE 3",
+            smallDescription: "COE 3 Description",
+            description:"One ",
             src: Ajay
         },
         {
-            title: "Ajay Kabra",
-            smallDescription: "COE Bangalore",
-            description:"Four",
+            title: "COE 4",
+            smallDescription: "COE 4 Description",
+            description:"One ",
             src: Ajay
         }
     ];

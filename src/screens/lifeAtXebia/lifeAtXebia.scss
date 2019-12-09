@@ -1,5 +1,15 @@
 @import "../../styles/colors.scss";
 @import "../../styles/media.scss";
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+
+.image-gallery{
+  height: 450px;
+  overflow: hidden;
+}
+
+.image-gallery-fullscreen-button , .image-gallery-play-button, .image-gallery-thumbnails-wrapper{
+  display: none;
+}
 
 .life-container {
   min-height: 100vh;
@@ -71,6 +81,11 @@
     color: $grey-1 !important;
     margin: 0 auto;
   }
+
+
+
+
+
   .carousel-item{
     
    

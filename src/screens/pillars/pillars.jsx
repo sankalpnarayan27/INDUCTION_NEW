@@ -39,7 +39,7 @@ const Pillars = () => {
 
   return (
     <div className="pillars-container screen-container d-flex flex-column justify-content-center align-items-center">
-      <header className="mb-4">Xebia's Values</header>
+      <header id="pillars" className="mb-4">Xebia's Values</header>
       <div className="pillar-grid text-center">
         {
           XebiaValues.map((x, i) => <Values {...x} key={i} Handler={descriptionHandler} Value={i} Clicked={coeInfo.Clicked} />)
@@ -48,7 +48,7 @@ const Pillars = () => {
       {
         coeInfo.Clicked != -1 ?
           <Row>
-            <div className="col-md-12 Card-Description box-shadow">
+            <div className="col-md-12 Card-Description">
               <div className="card-title h5">
                 {
                   coeInfo.Title

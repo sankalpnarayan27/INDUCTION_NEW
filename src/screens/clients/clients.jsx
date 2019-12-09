@@ -11,8 +11,10 @@ const Clients = () => {
       console.log(client);
       //getImage(filePath, client.image, extension)
       return (
-        <div className="py-4 px-5 m-2" key={"client" + index}>
-          <img alt={client.name} src={client.image} />
+        <div className="py-4 px-5 m-2 client" key={"client" + index}>
+          <div>
+            <img alt={client.name} src={client.image} />
+          </div>
         </div>
       );
     });

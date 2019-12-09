@@ -8,6 +8,8 @@ import bornImage from "../../assets/images/born.svg";
 import * as gPhotos from "./gallery.jsx";
 import { Modal, Button, Container, Row, Col } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel'
+import Lightbox from 'react-image-gallery';
+
 const LifeAtXebia = () => {
   const [toggle, eventsClicked] = useState(false);
 
@@ -32,27 +34,21 @@ const LifeAtXebia = () => {
   const allGallery = _ => {
     let gal = [];
     for (let x in gPhotos) {
-      gal.push({ name: x, src: gPhotos[x] });
+      gal.push({ title: x, original: gPhotos[x] });
     }
     return gal
   }
   useEffect(_ => {
-    
+
   });
 
 
 
   const GalleryView = props => {
-
-
-
     return (
-      <figure className="col-md-4">
-        <a href="#" data-size="1600x1067">
-          <img alt="picture" src={props.Src}
-            className="img-fluid" />
-        </a>
-      </figure>
+      <div>
+        <Lightbox items={props.Model} />
+      </div>
     )
   }
 
@@ -99,8 +95,7 @@ const LifeAtXebia = () => {
             </p>
           </div>
         </section>
-
-
+       
         <Modal show={show} onHide={handleClose} centered size="lg">
           <Modal.Header closeButton>
             <Modal.Title>Gallery</Modal.Title>
@@ -108,7 +103,10 @@ const LifeAtXebia = () => {
           <Modal.Body>
             <div class="row">
               <div class="col-md-12">
-                {allGallery().map((x, i) => <GalleryView key={i} Src={x.src} Name={x.name} />)}
+              <div>
+                <GalleryView Model={allGallery()} />
+              </div>
+               {/*<GalleryView Model={allGallery()} /> */}
               </div>
             </div>
           </Modal.Body>
@@ -137,6 +135,9 @@ const LifeAtXebia = () => {
             </section> :
             ""
         }
+      </div>
+      <div className="container">
+        
       </div>
     </div>
   );

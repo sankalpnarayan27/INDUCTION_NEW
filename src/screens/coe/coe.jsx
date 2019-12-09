@@ -30,6 +30,18 @@ const Coe = _ => {
             smallDescription: "COE 4 Description",
             description:"One ",
             src: Ajay
+        },
+        {
+            title: "COE 5",
+            smallDescription: "COE 4 Description",
+            description:"One ",
+            src: Ajay
+        },
+        {
+            title: "COE 6",
+            smallDescription: "COE 4 Description",
+            description:"One ",
+            src: Ajay
         }
     ];
     const [coeInfo, descriptionHandler] = useState({Title:"",Description:"",Clicked: -1});
@@ -47,7 +59,7 @@ const Coe = _ => {
             
         });
         return (
-            <Col md={3}>
+            <Col md={2}>
                 <Card className="box-shadow" style={{ maxWidth: '18rem' }} onClick={ _=>Handler({...props, Clicked: Value})}>
                     <Card.Img variant="top" src={Src} />
                     <Card.Body>
@@ -80,7 +92,7 @@ const Coe = _ => {
                 {
                     coeInfo.Clicked != -1 ?
                         <Row>
-                        <div className="col-md-12 Card-Description box-shadow">
+                        <div className="col-md-12 Card-Description">
                             <div className="card-title h5">
                                 {
                                     coeInfo.Title

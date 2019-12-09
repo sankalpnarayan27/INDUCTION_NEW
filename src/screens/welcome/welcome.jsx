@@ -2,6 +2,7 @@ import React from "react";
 import "./welcome.scss";
 import xebiaLogo from "../../assets/Group_161.svg";
 import welcome from "../../assets/welcome.svg";
+import { Link } from "react-scroll";
 
 const Welcome = () => {
   return (
@@ -15,7 +16,7 @@ const Welcome = () => {
             <img alt="welcome" className="mw-100" src={welcome} />
           </div>
           <div>
-            <button className="btn grey2-bg">We were born in</button>
+            <Link to="born-in-netherland" spy={true} smooth={true} duration={1000} className="btn grey2-bg">We were born in</Link>
           </div>
         </div>
         <div className="d-flex align-items-center group-image p-4">

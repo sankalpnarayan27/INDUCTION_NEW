@@ -45,32 +45,37 @@
     -->
 </body>
 <style>
+     @media (max-width: 442px) {
+        .modal-content {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+     
+  
   @media (min-width: 992px) {
 
     .modal-lg,
     .modal-xl {
       max-width: none;
     }
+    .modal-content {
+      width: 59%;
+      margin: 0 auto;
+    }
   }
 
-  .modal-content {
-    width: 80%;
-    margin: 0 auto;
-  }
+  
 
   .modal-body {
-    overflow-y: auto;
     height: 460px;
+    
   }
 
-  figure {
+ .modal-body > div > div > div{
     float: left;
-    box-shadow: 1px 1px 6px 0px #ececef;
-    height: 250px;
-    border-radius: 5px;
-    padding: 1px;
-    overflow: hidden;
-  }
+ }
+ 
 </style>
 <!-- JQuery -->
 <script>

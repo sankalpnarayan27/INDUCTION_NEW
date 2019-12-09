@@ -14,8 +14,8 @@ function App() {
     <div className="App">
       <Welcome />
       <BornInNetherlands />
-      <Locations />
       <Pillars />
+      <Locations />
       <XebiaGroup />
       <Coe />
       <Clients />

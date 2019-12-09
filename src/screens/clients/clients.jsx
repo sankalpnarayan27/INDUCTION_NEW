@@ -8,9 +8,11 @@ const Clients = () => {
     return clientsData.clients.map((client, index) => {
       let filePath = "icons/";
       let extension = "svg";
+      console.log(client);
+      //getImage(filePath, client.image, extension)
       return (
         <div className="py-4 px-5 m-2" key={"client" + index}>
-          <img alt="client" src={getImage(filePath, client.image, extension)} />
+          <img alt={client.name} src={client.image} />
         </div>
       );
     });

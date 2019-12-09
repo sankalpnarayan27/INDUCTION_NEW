@@ -48,7 +48,7 @@ const LifeAtXebia = () => {
 
     return (
       <figure className="col-md-4">
-        <a href={props.Src} data-size="1600x1067">
+        <a href="#" data-size="1600x1067">
           <img alt="picture" src={props.Src}
             className="img-fluid" />
         </a>

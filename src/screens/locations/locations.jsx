@@ -16,23 +16,10 @@ const Locations = _ => {
                         </div>
                         <div className="col-md-8">
                             <div>
-                                <h3>2500+</h3>
+                                <h3>1500+</h3>
                             </div>
                             <div>
                                 <p>People World Wide</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="col-md-4">
-                            <img alt="" src={globe} />
-                        </div>
-                        <div className="col-md-8">
-                            <div>
-                                <h3>12</h3>
-                            </div>
-                            <div>
-                                <p>Global Presence</p>
                             </div>
                         </div>
                     </div>
@@ -46,6 +33,19 @@ const Locations = _ => {
                             </div>
                             <div>
                                 <p>Glorious Years &amp; Counting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="col-md-4">
+                            <img alt="" src={globe} />
+                        </div>
+                        <div className="col-md-8">
+                            <div>
+                                <h3>12</h3>
+                            </div>
+                            <div>
+                                <p>Global Presence</p>
                             </div>
                         </div>
                     </div>

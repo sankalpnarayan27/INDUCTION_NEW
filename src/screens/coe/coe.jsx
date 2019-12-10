@@ -72,7 +72,7 @@ const Coe = _ => {
                 <div className={"arrow "+askArrow} style={{margin: "0 auto",maxWidth : "40px"}}>
                     <svg style={{height: "30px", width: "40px" }}>
                         <g>
-                            <polygon points="10,0 30,0 20,8" style={{ fill: "#707070a1", stroke: "#707070a1", strokeWidth: 4 }}></polygon>
+                            <polygon points="10,0 30,0 20,8" style={{ fill: "#CBCBCB", stroke: "#CBCBCB", strokeWidth: 4 }}></polygon>
                         </g>
                     </svg>
                 </div>

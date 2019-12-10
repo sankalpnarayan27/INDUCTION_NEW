@@ -3,7 +3,7 @@ import './locations.scss';
 import connection from '../../assets/icons/connection.svg';
 import globe from '../../assets/icons/worldwide.svg';
 import hourglass from '../../assets/icons/hourglass.svg';
-import nopath from '../../assets/images/NoPath.png';
+//import nopath from '../../assets/images/NoPath.png';
 //embed-responsive embed-responsive-16by9
 const Locations = _ => {
     return (

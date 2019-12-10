@@ -25,13 +25,6 @@ const Pillars = () => {
           </div>
           <div className="mt-4">{props.ShortDesc}</div>
         </div>
-        <div className={"arrow " + askArrow} style={{ margin: "0 auto", maxWidth: "40px" }}>
-          <svg style={{ height: "30px", width: "40px" }}>
-            <g>
-              <polygon points="10,0 30,0 20,8" style={{ fill: "#707070a1", stroke: "#707070a1", strokeWidth: 4 }}></polygon>
-            </g>
-          </svg>
-        </div>
       </div>
 
     )
@@ -40,14 +33,15 @@ const Pillars = () => {
   return (
     <div className="pillars-container screen-container d-flex flex-column justify-content-center align-items-center">
       <header id="pillars" className="mb-4">Xebia's Values</header>
-      <div className="pillar-grid text-center">
+      <div className="row">
+      <div className="pillar-grid text-center col-md-6">
         {
           XebiaValues.map((x, i) => <Values {...x} key={i} Handler={descriptionHandler} Value={i} Clicked={coeInfo.Clicked} />)
         }
       </div>
       {
         coeInfo.Clicked != -1 ?
-          <Row>
+          <div className="col-md-6">
             <div className="col-md-12 Card-Description">
               <div className="card-title h5">
                 {
@@ -60,8 +54,9 @@ const Pillars = () => {
                 }
               </div>
             </div>
-          </Row> : ""
+          </div> : <div className="col-md-6"></div>
       }
+      </div>
     </div>
   );
 };

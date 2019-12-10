@@ -9,6 +9,7 @@ import * as gPhotos from "./gallery.jsx";
 import { Modal, Button, Container, Row, Col } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel'
 import Lightbox from 'react-image-gallery';
+import { animateScroll as Scroll } from 'react-scroll';
 
 const LifeAtXebia = () => {
   const [toggle, eventsClicked] = useState(false);
@@ -39,7 +40,9 @@ const LifeAtXebia = () => {
     return gal
   }
   useEffect(_ => {
-
+    if(toggle){
+      Scroll.scrollToBottom();
+    }
   });
 
 
@@ -58,7 +61,7 @@ const LifeAtXebia = () => {
         <section className="data-section screen-container d-flex flex-column justify-content-stretch align-items-center">
           <header className="mb-4">Life At Xebia</header>
           <div className="policy-cards d-flex justify-content-center flex-wrap">
-            <div className="text-center flex-fill" onClick={_ => eventsClicked(!toggle)}>
+            <div className="text-center flex-fill" to="events" spy={true} smooth={true} offset={50} duration={1000} onClick={_ => eventsClicked(!toggle)}>
               <div className="d-flex flex-column align-items-center card-heading">
                 <img width="50px" height="50px" alt="evets" src={events} />
                 <span className="mt-2">Events</span>
@@ -127,7 +130,7 @@ const LifeAtXebia = () => {
       <div className="container">
         {
           toggle ?
-            <section className="events-section data-section screen-container d-flex flex-column justify-content-stretch align-items-center">
+            <section id="events" className="events-section data-section screen-container d-flex flex-column justify-content-stretch align-items-center">
               <header className="mb-4">Events at Xebia</header>
               <Container>
                 {<ControlledCarousel CarouselItems={carouselItems} />}

@@ -10,6 +10,13 @@
         grid-gap: 2rem;
         }
     }
+    .map-flex{
+        height: 500px;
+        background-image: url("../../assets/images/NoPath.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     .locations-content {
         width:100%;
         height: 100%;

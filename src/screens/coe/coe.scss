@@ -22,7 +22,24 @@
   .box-shadow:hover{
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.15) !important;
   }
+  .card{
+    margin-left: 10px;
+  }
   
+  }
+  
+  @media(min-width: 770px){
+    .locations-container {
+      .card-wrapper{
+        float: left;
+      }
+      .card-container {
+        display: flex;
+      }
+    }
+    .card-container {
+      display: block;
+    }
   }
   @media(max-width: 845px){
     .Card-Description{

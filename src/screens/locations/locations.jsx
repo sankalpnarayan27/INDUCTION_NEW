@@ -3,12 +3,16 @@ import './locations.scss';
 import connection from '../../assets/icons/connection.svg';
 import globe from '../../assets/icons/worldwide.svg';
 import hourglass from '../../assets/icons/hourglass.svg';
+import nopath from '../../assets/images/NoPath.png';
+//embed-responsive embed-responsive-16by9
 const Locations = _ => {
     return (
         <div className="locations-container screen-container d-flex flex-column justify-content-center align-items-center">
             <header className="mb-4">Locations</header>
             <div className="locations-grid text-center container">
-                <div id="map" className="embed-responsive embed-responsive-16by9" ></div>
+                <div id="m" className="map-flex" >
+                    {/*<img src={nopath} width="900px" height="500px" />--> */}
+                </div>
                 <div className="locations-content">
                     <div className="col-md-4">
                         <div className="col-md-4">

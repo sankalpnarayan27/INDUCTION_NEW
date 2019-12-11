@@ -3,6 +3,7 @@
 
 .policy-container {
   min-height: 100vh;
+  height: 900px;
   overflow: hidden;
   @include medium {
     display: grid;
@@ -44,14 +45,25 @@
       }
     }
   }
+  .hide-visibility{
+    visibility: hidden;
+  }
+  
   .data-section {
     header {
       font-size: 40px;
     }
     .policy-leaves{
-      bottom: 420px;
+      bottom: 390px;
+    }
+    .awards-lists{
+      bottom: 1020px;
+      position: relative;
     }
     .policy-cards {
+      & > div {
+        float: left;
+      }
       & > div > div {
         margin: 20px;
         width: 220px;
@@ -67,6 +79,9 @@
         .card-content {
           font-size: 12px;
           padding-top: 20px;
+          li {
+            text-align: left;
+          }
         }
         &:hover {
           user-select: none;

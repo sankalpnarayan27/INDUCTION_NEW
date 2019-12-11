@@ -7,25 +7,46 @@ const array = [
         Title: "People First",
         ShortDesc: "People First, Always",
         Src: peopleFirst, 
-        Description: "Selective hiring through assessments and personal interviews. Hiring is based upon quality and authority only. Not on any goal or ambition for growth or revenue. No contracting of people, no use of any freelancer, just ourselves. Be open to the experience and expertise of others. You can be coached by colleagues if you ask for. But most of all be determined and self-conscious yourself. Professionals can develop themselves and grow within Xebia in any direction. Xebia provides an environment, but you have to take up your own responsibility. Create a healthy balance between the interest of the company, yourself and your colleagues. In the end we talk about the exact same interest. When Xebia and the employee part ways, make sure it is done with the highest level of integrity and fairness. We will see each other the next 20 years in business. It is in the interest of both to keep this in mind. Be truly interested in each other. Understand the other persons background, passions, personal situation. There is a lot to learn from other people. Be also open yourself to share this. You harvest a lot by doing this. Just an invite for a cup of coffee works great. Within Xebia we value the human size of things. Don’t think or act corporate; Find your way by communicating directly from person to person and value the small things in (working) life. Avoid any corporate behavior, it is conflicting with people’s interest, with company’s interest. We do a lot to get the right people. But even more importantly it is to make sure everyone can grow and explore their own capabilities and opportunities within Xebia. Xebia and many Xebians have grown by exploring their own potential. When you see and know anybody less happy, take your responsibility." 
+        Description: [
+            {bullet:"Xebians can migrate from one BU, Xebia Company or country to the other"},
+            {bullet: "Selective hiring through assessments and personal interviews"},
+            {bullet: "Professionals can develop themselves and grow within Xebia in any direction"},
+            {bullet: "Be open to the experience and expertise of others"},
+            {bullet: "Xebia provides an environment, but you have to take up your own responsibility"}
+        ] 
     },
     { 
         Title: "Sharing Knowledge", 
         ShortDesc: "The more you share it, the more you grow", 
         Src: sharingKnowledge, 
-        Description: "Mandatory stuff!  Xebia Knowledge Exchange every other Thursday from 4:00 pm to 6:30 pm in India and or at other timeslots in the specific countries. Mix of unit/company specific, TED-style and overall XKE’s. Be there! If you are not there, people cannot learn from you. Your colleagues come to XKE’s for your knowledge. If you are not there you break the system. “XKE attendance is more important than a customers problem.” Never compromise on this yourself. Do solve the problem of the customer, but not at XKE time. Again: XKE is mandatory! Some XKE sessions are turned into R&D/Innovation sessions. Great! Innovation is one of our business principles. Great to see Values and Business principles go hand in hand. Techlists, blogs, Slack, meet-ups, peer reviews, tech rally’s, face-to-face beer and coffee are great ways to share knowledge and insights. and customer round tables, seminars, presentations, XebiCon are good ways to share with customers as well. A Xebian is never alone. Ask for help, reach out with your questions, and share your ideas and insight at the same time. Don't think you have to act on your own. You can count on your colleagues. At the same time, if you see a colleague being alone, reach out. Make sure your colleague feels at home. Sometimes people shorter time in the company need time to find their way. A little help can be very welcome. Knowledge should flow thru the entire organization, from country to country, from unit to unit, from e.g. Dutch peer to French or Indian peer persons. Be aware to share broader than your own entity. Xebia is way bigger than at first sight." 
+        Description: [
+            {bullet: "Mandatory stuff!  Xebia Knowledge Exchange every other Thursday from 4:00 pm to 6:30 pm."},
+            {bullet: "If you are not there, people cannot learn from you. Your colleagues come to XKE’s for your knowledge. If you are not there you break the system. XKE attendance is more important than a customers problem."},
+            {bullet: "Some XKE sessions are turned into R&D/Innovation sessions"},
+            {bullet: "A Xebian is never alone. Ask for help, reach out with your questions Knowledge should flow thru the entire organization, from country to country, from unit to unit"},
+        ] 
     },
     { 
         Title: "Customer Intimacy", 
         ShortDesc: "We don't just create customers, we create relationships", 
         Src: customerIntimacy, 
-        Description: "Strive for an equal level relationship between Xebia, you and the customer. Avoid hierarchy, that never works is a relationship. Work on common goals and trust. Drink coffee with your peers, ask them what they are doing, what their goals are and how you can help. Be truly interested in the person. Understand the business case of your customer; Become the trusted advisor. Advise un-asked for and pro-actively. That is what customers value in a Xebian. Don’t be shy. Evaluate your work together with the customer from time to time. Strive for relentless improvement. Co-create the Xebia eco-system yourself. A community of Xebia companies, employees, customers, ex-colleagues, study friends, meet-ups acquaintances, partners etc. Be an active part of this system, take initiative. We live from the community we build ourselves. Training, hiring, customers are all in the same community. Share your knowledge, build relationships, build respect, show what we do. Use the new Amsterdam office for meet-ups, community events, make it your home. Invest in this customer eco-system and it pays off. Xebia offers our customers a business network to peers. Work on that, invite your customers to our events, create relationships. We focus on the technology organizations and industry leaders; In the real big companies we can seldom leave our footprint, not achieve our mission. Our focus customers offer long term relationships, have challenging assignments; pay our bills in time. And we can cross-sell during the years. We strengthen customer relationship with value adding activities e.g. client seminars, workshops, round-tables, 3-star Michelin restaurant network dinners, blogs, meet-ups. We do not work with subcontractors or freelancers." 
+        Description: [
+            {bullet: "Strive for an equal level relationship between Xebia, you and the customer. Avoid hierarchy. Be truly interested in the person."},
+            {bullet: "Understand the business case of your customer; Become the trusted advisor."},
+            {bullet: "Co-create the Xebia eco-system yourself. A community of Xebia companies, employees, customers, ex-colleagues, study friends, meet-ups acquaintances, partners etc. Be an active part of this system, take initiative."},
+            {bullet: "We live from the community we build ourselves. Training, hiring, customers are all in the same community. Share your knowledge, build relationships, build respect, show what we do. Use the new Amsterdam office for meet-ups, community events, make it your home"},
+        ] 
     },
     { 
         Title: "Quality", 
         ShortDesc: "At Xebia Quality without compromise is the mantra", 
         Src: quality, 
-        Description: "Strive for 100% quality; Go for the 9; Always. You want to become an authority, don't you? Quality is not equal to experience. Quality is doing things right when nobody is there. Forget old behavior, boundaries, limits, attitude. When working longtime for a bigger SI or any company, you get raised in and infected by a different system. Change and adapt Xebia’s values. Don’t underestimate this aspect and just try and explore the new. Don’t ask, just do, apologize later. Go fix! Learn by doing and moving forward; Mistakes are ok, as long as you learn, improve and move forward. Make the miles. Just do! And when you have success, celebrate and don’t be shy to expose!! Arrange the right conditions What does it take to get the best result? Is it a real roadblock or not? Take your own responsibility. Speak up, let yourself be heard. Perform to the highest possible levels. Enough is just not good enough. Quality and Authority is not only about code. It is about parties, furniture, infrastructure, the way we look and dress, the art on the wall, the quality of the coffee, the smile when the door is opened. Everything!" 
+        Description: [
+            {bullet: "Strive for 100% quality; Go for the 9; Always"},
+            {bullet: "Forget old behavior, boundaries, limits, attitude."},
+            {bullet: "Don’t ask, just do, apologize later. Go fix!"},
+            {bullet: "Learn by doing and moving forward; Mistakes are ok, as long as you learn, improve and move forward Arrange the right conditions"},
+        ] 
     }
   ]
   export default array;

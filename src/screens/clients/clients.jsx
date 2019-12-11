@@ -11,7 +11,7 @@ const Clients = () => {
       console.log(client);
       //getImage(filePath, client.image, extension)
       return (
-        <div className="py-4 px-5 m-2 client" key={"client" + index}>
+        <div className="py-4 m-2 client" key={"client" + index}>
           <div>
             <img alt={client.name} src={client.image} />
           </div>
@@ -26,7 +26,7 @@ const Clients = () => {
   };
 
   return (
-    <div className="clients-container screen-container d-flex flex-column justify-content-start align-items-center">
+    <div className="clients-container container d-flex flex-column justify-content-start align-items-center">
       <header className="mb-4">Clients</header>
       <div className="clients-cards">
         <div id="clientsContainer" className="d-flex flex-column flex-wrap">

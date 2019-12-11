@@ -21,15 +21,15 @@ const LifeAtXebia = () => {
   const carouselItems = [
     {
       imgSrc: bornImage,
-      description: "img elements must have an alt prop, either with meaningful text, or an empty string for decorative images "
+      description: "Xebia Events"
     },
     {
       imgSrc: bornImage,
-      description: "Second Slide"
+      description: "Xebia Events"
     },
     {
       imgSrc: bornImage,
-      description: "Third Slide img elements must have an alt prop, either with meaningful text, or an empty string for decorative images "
+      description: "Xebia Events"
     }
   ];
   const allGallery = _ => {
@@ -67,8 +67,8 @@ const LifeAtXebia = () => {
                 <span className="mt-2">Events</span>
               </div>
               <div className="card-content">
-                Morbi consectetur dui in magna condimentum malesuada.
-            </div>
+                Events at Xebia
+              </div>
             </div>
             <div className="text-center flex-fill" onClick={handleShow} >
               <div className="d-flex flex-column align-items-center card-heading">
@@ -76,8 +76,8 @@ const LifeAtXebia = () => {
                 <span className="mt-2">Gallery</span>
               </div>
               <div className="card-content">
-                Morbi consectetur dui in magna condimentum malesuada.
-            </div>
+                Xebia Gallery
+              </div>
             </div>
             <div className="text-center flex-fill">
               <div className="d-flex flex-column align-items-center card-heading">
@@ -85,8 +85,8 @@ const LifeAtXebia = () => {
                 <span className="mt-2">Cares</span>
               </div>
               <div className="card-content">
-                Morbi consectetur dui in magna condimentum malesuada.
-            </div>
+                Xebia Cares
+              </div>
             </div>
           </div>
         </section>

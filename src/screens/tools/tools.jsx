@@ -6,7 +6,6 @@ import slack from '../../assets/logos/slack.png';
 import dkm from '../../assets/logos/dkm.png';
 import github from '../../assets/logos/github.png';
 import jira from '../../assets/logos/jira.png';
-
 const tools = _ => {
     return (
         <div className="fluid-container tools-background">
@@ -22,7 +21,7 @@ const tools = _ => {
                             Outlook is our official email provider. Keep yourself updated by accessing your emails on outlook desktop app, mobile app or web.
                             </div>
                             <div className="card-bottom">
-                                <div><span>Available On:</span> <span><img /></span><span><img /></span></div>
+                                <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
                             </div>
                         </div>
                     </div>
@@ -35,7 +34,7 @@ const tools = _ => {
                             A one stop shop for all our employees. Zoho is our complete HR solution. Automate and simplify operations like Leave, company policies &amp; attendance.
                             </div>
                             <div className="card-bottom">
-                                <div><span>Available On:</span> <span><img /></span><span><img /></span></div>
+                                <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
                             </div>
                         </div>
                     </div>
@@ -48,7 +47,7 @@ const tools = _ => {
                             Slack is Xebia's internal chat application. You are always connected with Xebians through this easy and user friendly app.
                             </div>
                             <div className="card-bottom">
-                                <div><span>Available On:</span> <span><img /></span><span><img /></span></div>
+                                <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
                             </div>
                         </div>
                     </div>
@@ -61,7 +60,7 @@ const tools = _ => {
                             Slack is Xebia's internal chat application. You are always connected with Xebians through this easy and user friendly app.
                             </div>
                             <div className="card-bottom">
-                                <div><span>Available On:</span> <span><img /></span><span><img /></span></div>
+                                <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
                             </div>
                         </div>
                     </div>
@@ -74,7 +73,7 @@ const tools = _ => {
                             Outlook is our official email provider. Keep yourself updated by accessing your emails on outlook desktop app, mobile app or web.
                             </div>
                             <div className="card-bottom">
-                                <div><span>Available On:</span> <span><img /></span><span><img /></span></div>
+                                <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +86,7 @@ const tools = _ => {
                             Outlook is our official email provider. Keep yourself updated by accessing your emails on outlook desktop app, mobile app or web.
                             </div>
                             <div className="card-bottom">
-                                <div><span>Available On:</span> <span><img /></span><span><img /></span></div>
+                                <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
                             </div>
                         </div>
                     </div>

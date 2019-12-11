@@ -43,15 +43,17 @@ const Pillars = () => {
         coeInfo.Clicked != -1 ?
           <div className="col-md-6">
             <div className="col-md-12 Card-Description">
-              <div className="card-title h5">
+              <div className="card-title h4">
                 {
                   coeInfo.Title
                 }
               </div>
               <div>
-                {
-                  coeInfo.Description
-                }
+                <ul>
+                  {
+                    coeInfo.Description.map((x,i)=> <li key={i}>{x.bullet}</li>)
+                  }
+                </ul>
               </div>
             </div>
           </div> : <div className="col-md-6"></div>

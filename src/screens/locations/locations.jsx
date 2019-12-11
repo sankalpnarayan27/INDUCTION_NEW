@@ -12,6 +12,8 @@ const Locations = _ => {
             <div className="locations-grid text-center container">
                 <div id="m" className="map-flex" >
                     {/*<img src={nopath} width="900px" height="500px" />--> */}
+                    <div className="fa fa-map-marker gurgaon"><div className="map-text">Gurugram</div></div>
+                    
                 </div>
                 <div className="locations-content">
                     <div className="col-md-4">

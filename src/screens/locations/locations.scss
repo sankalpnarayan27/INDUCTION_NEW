@@ -10,6 +10,23 @@
         grid-gap: 2rem;
         }
     }
+   
+    .gurgaon{
+        height: 10px;
+        width: 10px;
+        position: relative;
+        top: 185px;
+        left: 192px;
+        color: #993cff;
+        & > .map-text {
+            position: relative;
+            right: 29px;
+            visibility: hidden;
+        }
+        &:hover > .map-text{
+            visibility: visible;
+        }
+    }
     .map-flex{
         height: 500px;
         background-image: url("../../assets/images/NoPath.png");

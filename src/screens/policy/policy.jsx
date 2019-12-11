@@ -163,6 +163,18 @@ const Policy = () => {
                 </ul>
               </div>
             </div>
+            <div className={"text-center flex-fill awards"}>
+              <div className="d-flex flex-column align-items-center card-heading">
+                <span className="mt-2">2014 &amp; 2013</span>
+              </div>
+              <div className="card-content">
+                <ul>
+                  <li>Xebia India Mr Anand Sahay got award as one of the one of the top 10 CEO's &amp; key strategic advisor for 2014 by HITECH</li>
+                  <li>Xebia France great place to work</li>
+                  <li>Xebia Netherlands great place to work</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>

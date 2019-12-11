@@ -8,9 +8,9 @@ import Ajay from '../../assets/images/ajay.png';
 const Coe = _ => {
     const coeList = [
         {
-            title: "COE 1",
-            smallDescription: "COE 1 Description",
-            description: "One ",
+            title: "Vikas Mittal",
+            smallDescription: "Digital Assurance",
+            description: "In 2019 we brought in Vikas Mittal a industry thought leader to establish “Digital Assurance & Consulting” service line. Mission of this service line is providing CCC (Confidence, Conformance and Capability) to our customers to determine if their applications are ready to be used in today’s digital world. ",
             src: Ajay
         },
         {

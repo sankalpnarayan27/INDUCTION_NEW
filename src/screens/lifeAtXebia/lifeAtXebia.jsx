@@ -165,6 +165,7 @@ const ControlledCarousel = props => {
                 <div className="item-wrapper">
 
                   <div>{x.description}</div>
+                  <div><i className="fa fa-play" style={{color:"#bf234b"}}></i></div>
                 </div>
                 <div className="item-wrapper">
                   <img

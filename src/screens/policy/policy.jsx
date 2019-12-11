@@ -56,6 +56,15 @@ const Policy = () => {
             </div>
             <div className={"text-center flex-fill "}>
               <div className="d-flex flex-column align-items-center card-heading">
+                <img width="50px" height="50px" alt="awards" src={awards} />
+                <span className="mt-2">Performance Appraisal</span>
+              </div>
+              <div className="card-content">
+                Performance Appraisal
+              </div>
+            </div>
+            <div className={"text-center flex-fill "}>
+              <div className="d-flex flex-column align-items-center card-heading">
                 <img
                   width="50px"
                   height="50px"

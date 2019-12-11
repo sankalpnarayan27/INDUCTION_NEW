@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./coe.scss";
 import { Card, Button, Col, Row } from "react-bootstrap";
 
-import Ajay from '../../assets/images/ajay.jpg';
+import Ajay from '../../assets/images/ajay.png';
 
 
 const Coe = _ => {

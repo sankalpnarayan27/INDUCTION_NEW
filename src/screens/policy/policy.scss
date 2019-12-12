@@ -56,16 +56,20 @@
     .policy-leaves{
       bottom: 390px;
     }
+    
+    .awards-lists{
+      bottom: 1020px;
+      position: relative;
+    }
     @media (max-width: 543px) {
     
       .policy-leaves{
         bottom: 670px;
       }
+      .awards-lists{
+        bottom: 1600px;
+      }
       
-    }
-    .awards-lists{
-      bottom: 1020px;
-      position: relative;
     }
     .policy-cards {
       & > div {
@@ -111,7 +115,7 @@
 @media (max-width: 543px) {
     
   .policy-container{
-    height: 1100px;
+    height: 1400px;
   }
   
 }

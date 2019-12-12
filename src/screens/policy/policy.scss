@@ -56,6 +56,13 @@
     .policy-leaves{
       bottom: 390px;
     }
+    @media (max-width: 543px) {
+    
+      .policy-leaves{
+        bottom: 670px;
+      }
+      
+    }
     .awards-lists{
       bottom: 1020px;
       position: relative;
@@ -88,6 +95,23 @@
           box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.15) !important;
         }
       }
+      @media (max-width: 543px) {
+    
+        & > div > div {
+          margin: 10px;
+          margin-left: 20px;
+          margin-bottom: 3px;
+        }
+        
+      }
+     
     }
   }
+}
+@media (max-width: 543px) {
+    
+  .policy-container{
+    height: 1100px;
+  }
+  
 }

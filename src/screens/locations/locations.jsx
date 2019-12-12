@@ -10,11 +10,10 @@ const Locations = _ => {
         <div className="locations-container screen-container d-flex flex-column justify-content-center align-items-center">
             <header className="mb-4">Locations</header>
             <div className="locations-grid text-center container">
-                <div id="m" className="map-flex" >
-                    {/*<img src={nopath} width="900px" height="500px" />--> */}
-                    <div className="fa fa-map-marker gurgaon"><div className="map-text">Gurugram</div></div>
-                    
-                </div>
+            <div>
+                <div className="hide-iframebar"></div>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1s6O6SbwQHMjX75-R9gM4QHgtbxWX0dhb" style={{position: "relative"}}  ></iframe>
+            </div>
                 <div className="locations-content">
                     <div className="col-md-4">
                         <div className="col-md-4">

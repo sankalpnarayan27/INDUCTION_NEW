@@ -15,8 +15,8 @@ const Pillars = () => {
     let { Value, Clicked , Handler } = props;
     let askArrow = Clicked == Value ? "" : "Hide-Arrow";
     return (
-      <div>
-        <div className="pillar-card" onClick={ _=>Handler({Title: props.Title, Description: props.Description, Clicked: Value})}>
+      <div className="pillar-ml">
+        <div className="pillar-card col-12" onClick={ _=>Handler({Title: props.Title, Description: props.Description, Clicked: Value})}>
           <div>
             <img alt="people" src={props.Src} />
           </div>
@@ -42,7 +42,7 @@ const Pillars = () => {
       {
         coeInfo.Clicked != -1 ?
           <div className="col-md-6">
-            <div className="col-md-12 Card-Description">
+            <div className="col-md-12 Card-Description pillar-ml">
               <div className="card-title h4">
                 {
                   coeInfo.Title

@@ -58,7 +58,16 @@
         margin-right: 40px;
         min-width: 400px;
     }
-
+    @media (max-width: 543px) {
+    
+        iframe{
+            height: 550px;
+            right: 35px;
+        }
+        .hide-iframebar{
+            right: 35px;
+        }
+      }
     
     .locations-content {
         width:100%;
@@ -85,4 +94,5 @@
             margin-top: 10px;
         }
     }
+    
 }

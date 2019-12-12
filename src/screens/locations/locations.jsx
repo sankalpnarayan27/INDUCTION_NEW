@@ -15,11 +15,11 @@ const Locations = _ => {
                 <iframe src="https://www.google.com/maps/d/embed?mid=1s6O6SbwQHMjX75-R9gM4QHgtbxWX0dhb" style={{position: "relative"}}  ></iframe>
             </div>
                 <div className="locations-content">
-                    <div className="col-md-4">
-                        <div className="col-md-4">
+                    <div className="col-md-4 col-sm-12 col-xs-12">
+                        <div className="col-md-4 col-sm-4 col-xs-4">
                             <img alt="" src={connection} />
                         </div>
-                        <div className="col-md-8">
+                        <div className="col-md-8 col-sm-8 col-xs-8">
                             <div>
                                 <h3>1500+</h3>
                             </div>
@@ -28,11 +28,11 @@ const Locations = _ => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
-                        <div className="col-md-4">
+                    <div className="col-md-4 col-sm-12 col-xs-12">
+                        <div className="col-md-4 col-sm-4 col-xs-4">
                             <img alt="" src={hourglass} />
                         </div>
-                        <div className="col-md-8">
+                        <div className="col-md-8 col-sm-8 col-xs-8">
                             <div>
                                 <h3>16</h3>
                             </div>
@@ -41,11 +41,11 @@ const Locations = _ => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
-                        <div className="col-md-4">
+                    <div className="col-md-4 col-sm-12 col-xs-12">
+                        <div className="col-md-4 col-sm-4 col-xs-4">
                             <img alt="" src={globe} />
                         </div>
-                        <div className="col-md-8">
+                        <div className="col-md-8 col-sm-8 col-xs-8">
                             <div>
                                 <h3>12</h3>
                             </div>

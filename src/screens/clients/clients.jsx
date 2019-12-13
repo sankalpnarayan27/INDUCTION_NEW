@@ -34,18 +34,8 @@ const Clients = () => {
         </div>
       </div>
       <div className="d-flex">
-        <input
-          className="button-scroll mr-2"
-          type="button"
-          value="<"
-          onClick={() => scrollClients("left")}
-        />
-        <input
-          className="button-scroll ml-2"
-          type="button"
-          value=">"
-          onClick={() => scrollClients("right")}
-        />
+        <i className="fa fa-arrow-circle-left" onClick={() => scrollClients("left")}></i>
+        <i className="fa fa-arrow-circle-right" onClick={() => scrollClients("right")}></i>
       </div>
     </div>
   );

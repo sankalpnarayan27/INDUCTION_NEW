@@ -3,6 +3,7 @@ import "./coe.scss";
 import { Card, Button, Col, Row } from "react-bootstrap";
 
 import Ajay from '../../assets/images/ajay.png';
+import { relative } from "path";
 
 
 const Coe = _ => {
@@ -14,21 +15,21 @@ const Coe = _ => {
             src: Ajay
         },
         {
-            title: "COE 2",
-            smallDescription: "COE 2 Description",
-            description: "One ",
+            title: "Shekhar Gulati",
+            smallDescription: "Full Stack",
+            description: "Full stack COE works in backend technologies like Java, Golang, Node.js, frontend technologies like React, Angular, Vue.js, and mobile technologies like React Native, iOS and Android native development. It is composed of humble, technical people who believe in Extreme programming practices and continuous learning. We blog regularly, speak at conferences, and contribute to open source",
             src: Ajay
         },
         {
-            title: "COE 3",
-            smallDescription: "COE 3 Description",
-            description: "One ",
+            title: "RAM NARASIMHAN",
+            smallDescription: "BIG DATA",
+            description: "At Xebia, we are ‘consulting technologists’ – which means we partner with customer to solve problems using technology. Without exception we start with the strategic goals of our customer and develop a plan to assist with transformation projects. This is the way we approach AI and Big Data analytics",
             src: Ajay
         },
         {
-            title: "COE 4",
-            smallDescription: "COE 4 Description",
-            description: "One ",
+            title: "VIKAS THAREJA",
+            smallDescription: "Microsoft",
+            description: "Our Microsoft practice (MS Practice) is Microsoft Partner on DevOps and Application Development, Microsoft Cloud Solution Provider and Microsoft MPN Partner consists of many leading IT specialists in Microsoft Application Lifecycle Management, Cloud, Enterprise Mobility & Security, Data Analytics & Power Bi et al.Globally this practice is called Xpirit and regionally it is managed under MSFT COE. Since inception the MS practice is focussed on providing high-end consulting solutions to our clients and help them to adopt the new offerings effectively, making their operations cost-effective and business more relevant as compared to the competitors.We specialize in high performance, secure solutions on MS technology stack including focussed consultancy for Azure migration path for enterprises and helping with DevOps set-up and adoption of Agile practices.",
             src: Ajay
         },
         {
@@ -63,7 +64,7 @@ const Coe = _ => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <div className={"arrow " + askArrow} style={{ margin: "0 auto", maxWidth: "40px" }}>
+                <div className={"arrow " + askArrow} style={{ margin: "0 auto", maxWidth: "40px", position: "relative", bottom: "10px"  }}>
                     <svg style={{ height: "30px", width: "40px" }}>
                         <g>
                             <polygon points="10,0 30,0 20,8" style={{ fill: "#CBCBCB", stroke: "#CBCBCB", strokeWidth: 4 }}></polygon>

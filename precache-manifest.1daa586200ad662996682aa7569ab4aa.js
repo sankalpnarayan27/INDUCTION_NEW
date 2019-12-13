@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2041a8913184ab9b265349c0d754e00",
+    "revision": "82ea2784a74fc3768e2de994921fa157",
     "url": "/INDUCTION_NEW/index.html"
   },
   {
-    "revision": "0cbcc5e55b1ad0fa1f60",
+    "revision": "9c6be90a5292fb394497",
     "url": "/INDUCTION_NEW/static/css/2.833dd627.chunk.css"
   },
   {
-    "revision": "ebbab87dbccd9dc188a3",
-    "url": "/INDUCTION_NEW/static/css/main.fa9405e0.chunk.css"
+    "revision": "e5764876a736c30d9ab9",
+    "url": "/INDUCTION_NEW/static/css/main.a4d836c7.chunk.css"
   },
   {
-    "revision": "0cbcc5e55b1ad0fa1f60",
-    "url": "/INDUCTION_NEW/static/js/2.d991847e.chunk.js"
+    "revision": "9c6be90a5292fb394497",
+    "url": "/INDUCTION_NEW/static/js/2.cbebad3f.chunk.js"
   },
   {
-    "revision": "ebbab87dbccd9dc188a3",
-    "url": "/INDUCTION_NEW/static/js/main.6e84f325.chunk.js"
+    "revision": "e5764876a736c30d9ab9",
+    "url": "/INDUCTION_NEW/static/js/main.a933c353.chunk.js"
   },
   {
     "revision": "26c5e17fdfc288df5220",
@@ -309,12 +309,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/INDUCTION_NEW/static/media/quality.3fdc711b.svg"
   },
   {
+    "revision": "53a7014956adf170c83e44516dd8e741",
+    "url": "/INDUCTION_NEW/static/media/ram.53a70149.png"
+  },
+  {
     "revision": "84a6e7b560c532f4f2584c19f1764320",
     "url": "/INDUCTION_NEW/static/media/remember.84a6e7b5.svg"
   },
   {
     "revision": "ae27e9d26b6aa793729da00b35895f5c",
     "url": "/INDUCTION_NEW/static/media/ribbon.ae27e9d2.svg"
+  },
+  {
+    "revision": "289ad86887879307f5f277d7ad0fd444",
+    "url": "/INDUCTION_NEW/static/media/s-g.289ad868.png"
+  },
+  {
+    "revision": "388dfa84f282a483779f5a35147bd6c8",
+    "url": "/INDUCTION_NEW/static/media/shekhargulati.388dfa84.png"
   },
   {
     "revision": "cd0c78940438c039ec1dabeb68b3f339",
@@ -347,6 +359,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0eb6897f6aec46c1f5a2f2a4240d7be2",
     "url": "/INDUCTION_NEW/static/media/trophy.0eb6897f.svg"
+  },
+  {
+    "revision": "58c05502813f3e2614e14c6ca831212e",
+    "url": "/INDUCTION_NEW/static/media/vikasmittal.58c05502.jpg"
+  },
+  {
+    "revision": "8e1c75e51ea957153e2804c5f41b567c",
+    "url": "/INDUCTION_NEW/static/media/vm.8e1c75e5.png"
   },
   {
     "revision": "2f63dff9150dc0bd50745a65c16668e9",

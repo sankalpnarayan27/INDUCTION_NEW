@@ -98,7 +98,7 @@ const XebiaGroup = _ => {
                                         <svg x="440">
                                             <g>
                                                 <Rectangle X={50} Y={90} TY1="28" TX1="20" TX2="15" T1={"Xebia"} T2={"Gurugram"} />
-                                                <Rectangle X={50} Y={150} TY1="28" T1={"Xebia"} TX2="15" T2={"Xebia Pune"} />
+                                                <Rectangle X={50} Y={150} TY1="28" T1={"Xebia"} TX2="25" T2={"Pune"} />
                                                 <Rectangle X={50} Y={210} TY1="28" TX2="15" T1={"Xebia"} T2={"Bangalore"} />
                                                 <Rectangle X={50} Y={270} TY1="28" TX2="15" T1={"Xebia"} T2={"Academy"} />
                                             </g>

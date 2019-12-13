@@ -41,7 +41,7 @@ const Coe = _ => {
         {
             title: "Ajay Kabra",
             smallDescription: "Agile",
-            description: "Agility with scalability is critical to ensure fast time to market for any project ",
+            description: "Agile software development refers to a group of software development methodologies based on iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams.",
             src: Ajay
         },
         {

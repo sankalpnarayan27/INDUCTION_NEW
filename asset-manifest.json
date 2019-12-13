@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/INDUCTION_NEW/static/css/main.f024926f.chunk.css",
-    "main.js": "/INDUCTION_NEW/static/js/main.82101155.chunk.js",
-    "main.js.map": "/INDUCTION_NEW/static/js/main.82101155.chunk.js.map",
+    "main.css": "/INDUCTION_NEW/static/css/main.fa9405e0.chunk.css",
+    "main.js": "/INDUCTION_NEW/static/js/main.6e84f325.chunk.js",
+    "main.js.map": "/INDUCTION_NEW/static/js/main.6e84f325.chunk.js.map",
     "runtime-main.js": "/INDUCTION_NEW/static/js/runtime-main.23f6be59.js",
     "runtime-main.js.map": "/INDUCTION_NEW/static/js/runtime-main.23f6be59.js.map",
     "static/css/2.833dd627.chunk.css": "/INDUCTION_NEW/static/css/2.833dd627.chunk.css",
-    "static/js/2.05d67a07.chunk.js": "/INDUCTION_NEW/static/js/2.05d67a07.chunk.js",
-    "static/js/2.05d67a07.chunk.js.map": "/INDUCTION_NEW/static/js/2.05d67a07.chunk.js.map",
+    "static/js/2.d991847e.chunk.js": "/INDUCTION_NEW/static/js/2.d991847e.chunk.js",
+    "static/js/2.d991847e.chunk.js.map": "/INDUCTION_NEW/static/js/2.d991847e.chunk.js.map",
     "index.html": "/INDUCTION_NEW/index.html",
-    "precache-manifest.fd6db4367bb1765b7de6ad7fb0273d3d.js": "/INDUCTION_NEW/precache-manifest.fd6db4367bb1765b7de6ad7fb0273d3d.js",
+    "precache-manifest.268dd7c80f9acf82ff00c5bc1b30b6fe.js": "/INDUCTION_NEW/precache-manifest.268dd7c80f9acf82ff00c5bc1b30b6fe.js",
     "service-worker.js": "/INDUCTION_NEW/service-worker.js",
     "static/css/2.833dd627.chunk.css.map": "/INDUCTION_NEW/static/css/2.833dd627.chunk.css.map",
-    "static/css/main.f024926f.chunk.css.map": "/INDUCTION_NEW/static/css/main.f024926f.chunk.css.map",
+    "static/css/main.fa9405e0.chunk.css.map": "/INDUCTION_NEW/static/css/main.fa9405e0.chunk.css.map",
     "static/media/05101d77995fd17eed5a6340b0ec2e89.png": "/INDUCTION_NEW/static/media/05101d77995fd17eed5a6340b0ec2e89.05101d77.png",
     "static/media/2dad917621850da1a2e1f76e1aa9650c.png": "/INDUCTION_NEW/static/media/2dad917621850da1a2e1f76e1aa9650c.3be058e9.png",
     "static/media/40aad5e2d2d264aeb7e8f785f27c237c.png": "/INDUCTION_NEW/static/media/40aad5e2d2d264aeb7e8f785f27c237c.40aad5e2.png",
@@ -106,8 +106,8 @@
   "entrypoints": [
     "static/js/runtime-main.23f6be59.js",
     "static/css/2.833dd627.chunk.css",
-    "static/js/2.05d67a07.chunk.js",
-    "static/css/main.f024926f.chunk.css",
-    "static/js/main.82101155.chunk.js"
+    "static/js/2.d991847e.chunk.js",
+    "static/css/main.fa9405e0.chunk.css",
+    "static/js/main.6e84f325.chunk.js"
   ]
 }

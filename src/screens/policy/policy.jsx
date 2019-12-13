@@ -39,7 +39,7 @@ const Policy = () => {
             <div className="text-center flex-fill" onClick={_ => onLeaves(!hidden)}>
               <div className="d-flex flex-column align-items-center card-heading">
                 <img width="50px" height="50px" alt="leaves" src={leaves} />
-                <span className="mt-2">Leaves</span>
+                <span className="mt-2">Leave</span>
               </div>
               <div className="card-content">
                 Leaves at Xebia

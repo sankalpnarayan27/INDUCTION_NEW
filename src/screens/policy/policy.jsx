@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./policy.scss";
-import policy from "../../assets/images/policy.svg";
+import policy from "../../assets/images/policy.png";
 import leaves from "../../assets/icons/sun-umbrella.svg";
 import awards from "../../assets/icons/trophy.svg";
 import thingsToRemember from "../../assets/icons/sticky.svg";

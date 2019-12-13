@@ -25,10 +25,18 @@
   .card{
     margin-left: 10px;
     margin-bottom: 10px;
+    min-width: 222px;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
   }
 
   .card-title{
-    font-size: 1rem;
+    font-size: 23px;
+    text-align: center;
+  }
+  .card-text{
+    text-align: center;
   }
   .card-img-top{
     width: 201px;

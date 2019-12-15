@@ -21,7 +21,7 @@ const tools = _ => {
                                 <img alt="leaves" src={outlook} />
                             </div>
                             <div className="card-content">
-                            Outlook is our official email provider. Keep yourself updated by accessing your emails on outlook desktop app, mobile app or web.
+                                Outlook is our official email provider. Keep yourself updated by accessing your emails on outlook desktop app, mobile app or web.
                             </div>
                             <div className="card-bottom">
                                 <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
@@ -34,7 +34,7 @@ const tools = _ => {
                                 <img alt="leaves" src={zoho} style={{height:"63%",marginTop:"20px"}} />
                             </div>
                             <div className="card-content">
-                            A one stop shop for all our employees. Zoho is our complete HR solution. Automate and simplify operations like Leave, company policies &amp; attendance.
+                                A one stop shop for all our employees. Zoho is our complete HR solution. Automate and simplify operations like Leave, company policies &amp; attendance.
                             </div>
                             <div className="card-bottom">
                                 <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
@@ -73,7 +73,7 @@ const tools = _ => {
                                 <img alt="leaves" src={slack} />
                             </div>
                             <div className="card-content">
-                            Slack is Xebia's internal chat application. You are always connected with Xebians through this easy and user friendly app.
+                                Slack is Xebia's internal chat application. You are always connected with Xebians through this easy and user friendly app.
                             </div>
                             <div className="card-bottom">
                                 <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
@@ -86,7 +86,7 @@ const tools = _ => {
                                 <img alt="leaves" src={dkm} />
                             </div>
                             <div className="card-content">
-                            Slack is Xebia's internal chat application. You are always connected with Xebians through this easy and user friendly app.
+                                Struggling with queries related to payroll? DKM is the place to go! It is our payroll management system. Access your salary slips, investment details and FBP details
                             </div>
                             <div className="card-bottom">
                                 <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>
@@ -99,7 +99,7 @@ const tools = _ => {
                                 <img alt="leaves" src={github} style={{height:"63%",marginTop:"20px"}} />
                             </div>
                             <div className="card-content">
-                                GitHub is a Git repository hosting service which is used by Xebia as a official code repository
+                                GitHub is a Git repository hosting service which is used by Xebia as an official code repository
                             </div>
                             <div className="card-bottom">
                                 <div><span>Available On:</span> <span><i class="fab fa-app-store-ios"></i></span><span><i class="fab fa-google-play"></i></span></div>

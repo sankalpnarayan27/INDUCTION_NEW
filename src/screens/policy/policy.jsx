@@ -63,6 +63,7 @@ const Policy = () => {
                 Performance Appraisal
               </div>
             </div>
+            {/*
             <div className={"text-center flex-fill "}>
               <div className="d-flex flex-column align-items-center card-heading">
                 <img
@@ -77,7 +78,9 @@ const Policy = () => {
                 Things To Remember
               </div>
             </div>
+             */}
           </div>
+           
           <div className={"policy-leaves "+ showCss}>
             <div className={"text-center flex-fill "}>
               <div className="d-flex flex-column align-items-center card-heading">
@@ -148,18 +151,6 @@ const Policy = () => {
                   <li>Featured IT Market Clock for Application Development</li>
                   <li>Xebia Labs named leader in Gartner</li>
                   <li>Featured IT market clock for mobile development</li>
-                </ul>
-              </div>
-            </div>
-            <div className={"text-center flex-fill awards"}>
-              <div className="d-flex flex-column align-items-center card-heading">
-                <span className="mt-2">2014 &amp; 2013</span>
-              </div>
-              <div className="card-content">
-                <ul>
-                  <li>Xebia India Mr Anand Sahay got award as one of the one of the top 10 CEO's &amp; key strategic advisor for 2014 by HITECH</li>
-                  <li>Xebia France great place to work</li>
-                  <li>Xebia Netherlands great place to work</li>
                 </ul>
               </div>
             </div>

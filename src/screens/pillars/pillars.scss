@@ -20,11 +20,24 @@
     margin-top: 10px;
     min-height: 150px;
     height: 98%;
-    font-size: 16px;
+    font-size: 20px;
     flex: 0 0 87%;
     max-width: 100%;
     .card-title{
       margin-left: 40px;
+      color: #9D92B6;
+      font-size: 25px;
+    }
+    ul {
+      list-style: none;
+    }
+    ul li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #9D92B4; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
     }
   }
  
@@ -54,6 +67,8 @@
         width: 50px;
         height: 50px;
       }
+
+      
       
       &:hover {
         user-select: none;

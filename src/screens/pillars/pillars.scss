@@ -45,6 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     grid-gap: 2rem;
+    max-height: 440px;
     
     & .pillar-card {
       width: 220px;

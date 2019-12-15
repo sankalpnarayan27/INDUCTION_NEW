@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/INDUCTION_NEW/static/css/main.6bbb55c3.chunk.css",
-    "main.js": "/INDUCTION_NEW/static/js/main.a665e946.chunk.js",
-    "main.js.map": "/INDUCTION_NEW/static/js/main.a665e946.chunk.js.map",
+    "main.js": "/INDUCTION_NEW/static/js/main.22092737.chunk.js",
+    "main.js.map": "/INDUCTION_NEW/static/js/main.22092737.chunk.js.map",
     "runtime-main.js": "/INDUCTION_NEW/static/js/runtime-main.23f6be59.js",
     "runtime-main.js.map": "/INDUCTION_NEW/static/js/runtime-main.23f6be59.js.map",
     "static/css/2.833dd627.chunk.css": "/INDUCTION_NEW/static/css/2.833dd627.chunk.css",
-    "static/js/2.99c74f2a.chunk.js": "/INDUCTION_NEW/static/js/2.99c74f2a.chunk.js",
-    "static/js/2.99c74f2a.chunk.js.map": "/INDUCTION_NEW/static/js/2.99c74f2a.chunk.js.map",
+    "static/js/2.5cb472a0.chunk.js": "/INDUCTION_NEW/static/js/2.5cb472a0.chunk.js",
+    "static/js/2.5cb472a0.chunk.js.map": "/INDUCTION_NEW/static/js/2.5cb472a0.chunk.js.map",
     "index.html": "/INDUCTION_NEW/index.html",
-    "precache-manifest.8a0767d19fa8eeb48dbf4853a6f60afd.js": "/INDUCTION_NEW/precache-manifest.8a0767d19fa8eeb48dbf4853a6f60afd.js",
+    "precache-manifest.6df7a76378df55919beb27e564096209.js": "/INDUCTION_NEW/precache-manifest.6df7a76378df55919beb27e564096209.js",
     "service-worker.js": "/INDUCTION_NEW/service-worker.js",
     "static/css/2.833dd627.chunk.css.map": "/INDUCTION_NEW/static/css/2.833dd627.chunk.css.map",
     "static/css/main.6bbb55c3.chunk.css.map": "/INDUCTION_NEW/static/css/main.6bbb55c3.chunk.css.map",
@@ -48,7 +48,7 @@
     "static/media/customer-support.svg": "/INDUCTION_NEW/static/media/customer-support.e5d8333a.svg",
     "static/media/day to day@2x.png": "/INDUCTION_NEW/static/media/day to day@2x.c99724db.png",
     "static/media/tools.scss": "/INDUCTION_NEW/static/media/daytoday.a7cb2873.png",
-    "static/media/diamond.svg": "/INDUCTION_NEW/static/media/diamond.5ac4a493.svg",
+    "static/media/diamond.svg": "/INDUCTION_NEW/static/media/diamond.d631560b.svg",
     "static/media/dkm.png": "/INDUCTION_NEW/static/media/dkm.66eeab74.png",
     "static/media/eeceb7aef2ba89e5fd7f873ad2641fce.png": "/INDUCTION_NEW/static/media/eeceb7aef2ba89e5fd7f873ad2641fce.eeceb7ae.png",
     "static/media/f9097e72e7e423449defaf80fb8e35c8.png": "/INDUCTION_NEW/static/media/f9097e72e7e423449defaf80fb8e35c8.f9097e72.png",
@@ -95,12 +95,14 @@
     "static/media/shekhargulati.png": "/INDUCTION_NEW/static/media/shekhargulati.388dfa84.png",
     "static/media/slack.png": "/INDUCTION_NEW/static/media/slack.cd0c7894.png",
     "static/media/sticky.svg": "/INDUCTION_NEW/static/media/sticky.ab8b5df9.svg",
-    "static/media/sun-umbrella.svg": "/INDUCTION_NEW/static/media/sun-umbrella.6461c8e2.svg",
+    "static/media/sun-umbrella.svg": "/INDUCTION_NEW/static/media/sun-umbrella.a662b8b8.svg",
+    "static/media/sunumbrella.svg": "/INDUCTION_NEW/static/media/sunumbrella.6461c8e2.svg",
     "static/media/target.svg": "/INDUCTION_NEW/static/media/target.e3508f95.svg",
     "static/media/team.svg": "/INDUCTION_NEW/static/media/team.87bdc51d.svg",
     "static/media/tickets.svg": "/INDUCTION_NEW/static/media/tickets.4fe5543e.svg",
     "static/media/time.svg": "/INDUCTION_NEW/static/media/time.a6d4d4c6.svg",
-    "static/media/trophy.svg": "/INDUCTION_NEW/static/media/trophy.0eb6897f.svg",
+    "static/media/trophy.svg": "/INDUCTION_NEW/static/media/trophy.2f3324a0.svg",
+    "static/media/trophy_22.svg": "/INDUCTION_NEW/static/media/trophy_22.0eb6897f.svg",
     "static/media/vikasmittal.jpg": "/INDUCTION_NEW/static/media/vikasmittal.58c05502.jpg",
     "static/media/vm.png": "/INDUCTION_NEW/static/media/vm.8e1c75e5.png",
     "static/media/welcome.svg": "/INDUCTION_NEW/static/media/welcome.2f63dff9.svg",
@@ -113,8 +115,8 @@
   "entrypoints": [
     "static/js/runtime-main.23f6be59.js",
     "static/css/2.833dd627.chunk.css",
-    "static/js/2.99c74f2a.chunk.js",
+    "static/js/2.5cb472a0.chunk.js",
     "static/css/main.6bbb55c3.chunk.css",
-    "static/js/main.a665e946.chunk.js"
+    "static/js/main.22092737.chunk.js"
   ]
 }

@@ -3,7 +3,7 @@ import "./policy.scss";
 import policy from "../../assets/images/policy.png";
 import leaves from "../../assets/icons/sun-umbrella.svg";
 import awards from "../../assets/icons/trophy.svg";
-import thingsToRemember from "../../assets/icons/sticky.svg";
+import performance from "../../assets/icons/diamond.svg";
 const Policy = () => {
   const [hidden, onLeaves] = useState(false);
   const [ahidden, onAwards] = useState(false);
@@ -56,7 +56,7 @@ const Policy = () => {
             </div>
             <div className={"text-center flex-fill "}>
               <div className="d-flex flex-column align-items-center card-heading">
-                <img width="50px" height="50px" alt="awards" src={awards} />
+                <img width="50px" height="50px" alt="awards" src={performance} />
                 <span className="mt-2">Performance Appraisal</span>
               </div>
               <div className="card-content">

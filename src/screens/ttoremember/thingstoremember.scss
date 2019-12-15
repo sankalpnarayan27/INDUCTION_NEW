@@ -1,0 +1,53 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+.ttr-container {
+    color: $grey-1;
+    .ttr-title{
+        width: 498px;
+        height: 229px;
+        & > div:first-child{
+            font-size: 96px;
+            letter-spacing: 2.48px;
+            text-align: left;
+        }
+        & > div:nth-child(2){
+            font-size: 83px;
+            text-align: left;
+        }
+    }
+    .carousel-inner{
+        padding: 20px;
+    }
+    .carousel-indicators{
+        bottom: -40px;
+    }
+    .ttr-descriptiontitle > div > div {
+        float: left;
+    }
+    .ttr-descriptiontitle > div > div:first-child {
+        height: 71px;
+        width: auto;
+        font-size: 44px;
+    }
+    .ttr-descriptiontitle > div > div:nth-child(2) {
+        height: 28px;
+        width: auto;
+        letter-spacing: 0.36px;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+    .ttr-description{
+        font-size: 20px;
+        height: 371px;
+        width: 471px;
+    }
+    .slider-square{
+        width: 790px;
+        height: 528px;
+        border: 1px solid #E3E3E3;
+        border-radius: 10px;
+        opacity: 1;
+    }
+}

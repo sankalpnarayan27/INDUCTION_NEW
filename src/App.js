@@ -10,6 +10,8 @@ import Coe from "./screens/coe/coe";
 import Locations from './screens/locations/locations';
 import XebiaGroup from "./screens/xebiaGroup/xebiaGroup";
 import Tools from './screens/tools/tools';
+import ThingsToRemember from './screens/ttoremember/thingstoremember';
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,7 @@ function App() {
       <Coe />
       <Clients />
       <Policy />
+      <ThingsToRemember />
       <Tools/>
       <LifeAtXebia />
     </div>

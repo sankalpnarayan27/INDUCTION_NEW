@@ -1,7 +1,176 @@
 import './xebiaGroup.scss';
 import React, { useState } from 'react';
+import {Row} from 'react-bootstrap';
+import madhur from '../../assets/group/madhur.png';
+import brijesh from '../../assets/group/brijesh.jpg';
+import ajay from '../../assets/group/ajaykabra.jpg';
+import vigit from '../../assets/group/vigit.jpg';
+import karan from '../../assets/group/karan.jpg';
+import anurag from '../../assets/group/anurag.png';
 const XebiaGroup = _ => {
     const [toggleGroup, RectClickHandler] = useState(false);
+    const [showAcademy, AcademyHandler] = useState("none");
+    
+    
+
+    const Academy = _ => {
+        return(
+            <div className="academy">
+                    <div>
+                        Xebia Academy
+                    </div>
+                    <div>
+                        <div>
+                            <img src={brijesh} />
+                        </div>
+                        <div>
+                            <div>
+                                Brijesh Kohli
+                            </div>
+                            <div>
+                                Director Academy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
+
+    const XebiaUS = _ => {
+        return(
+            <div className="academy">
+                    <div>
+                        Xebia US
+                    </div>
+                    <div>
+                        <div>
+                            <img src={karan} />
+                        </div>
+                        <div>
+                            <div>
+                                Karan Nanguru
+                            </div>
+                            <div>
+                               Managing Director - Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
+
+    const MiddleEast = _ => {
+        return(
+            <div className="academy">
+                    <div>
+                        Xebia Middle East
+                    </div>
+                    <div>
+                        <div>
+                            <img src={anurag} />
+                        </div>
+                        <div>
+                            <div>
+                                Anurag Agar
+                            </div>
+                            <div>
+                               Director Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
+
+    const Gurugram = _ => {
+        return(
+            <div className="academy">
+                    <div>
+                        Xebia Gurugram
+                    </div>
+                    <div>
+                        <div>
+                            <img src={madhur} />
+                        </div>
+                        <div>
+                            <div>
+                                Madhur Arya
+                            </div>
+                            <div>
+                                Head of Operations
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
+
+    const Bangalore = _ => {
+        return(
+            <div className="academy">
+                    <div>
+                        Xebia Bangalore
+                    </div>
+                    <div>
+                        <div>
+                            <img src={ajay} />
+                        </div>
+                        <div>
+                            <div>
+                                Ajay Kabra
+                            </div>
+                            <div>
+                                Senior Director - XACT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
+    const XebiaUK = _ => {
+        return(
+            <div className="academy">
+                    <div>
+                        Xebia UK
+                    </div>
+                    <div>
+                        <div>
+                            <img />
+                        </div>
+                        <div>
+                            <div>
+                                Not Avaialble
+                            </div>
+                            <div>
+                                Not Avaialble
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
+    const Pune = _ => {
+        return(
+            <div className="academy">
+                    <div>
+                        Pune
+                    </div>
+                    <div>
+                        <div>
+                            <img src={vigit} />
+                        </div>
+                        <div>
+                            <div>
+                                Vijit Ghatge
+                            </div>
+                            <div>
+                                Director - Sales
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
     const Rectangle = props => {
         return (
             <svg x={props.X} y={props.Y}>
@@ -26,7 +195,7 @@ const XebiaGroup = _ => {
             <header className="mb-4">Xebia Group</header>
             <div className="container">
                 <div>
-                <svg style={{ height: "600px", width: "100%" }}>
+                <svg style={{ height: "500px", width: "100%" }}>
                     <g>
                         <svg height="450" x="0" y="0">
                             <Rectangle X={30} Y={180} TY1="28" TX1="10" T1={"Xebia Group"} />
@@ -75,10 +244,10 @@ const XebiaGroup = _ => {
                                         </svg>
                                         <svg x="270">
                                             <g>
-                                                <Rectangle X={50} Y={90} TY1="28" TX1="15" T1={"Xebia India"} />
-                                                <Rectangle X={50} Y={150} TY1="28" T1={"Xebia"} TX2="15" T2={"Middle East"} />
-                                                <Rectangle X={50} Y={210} TY1="28" TX2="30" T1={"Xebia"} T2={"US"} />
-                                                <Rectangle X={50} Y={270} TY1="28" TX2="30" T1={"Xebia"} T2={"UK"} />
+                                                <Rectangle X={50} Y={90} TY1="28" TX1="15" T1={"Xebia India"} RectClick={_=> {AcademyHandler("India")}} />
+                                                <Rectangle X={50} Y={150} TY1="28" T1={"Xebia"} TX2="15" T2={"Middle East"} RectClick={_=> {AcademyHandler("MiddleEast")}} />
+                                                <Rectangle X={50} Y={210} TY1="28" TX2="30" T1={"Xebia"} T2={"US"} RectClick={_=> {AcademyHandler("XebiaUS")}} />
+                                                <Rectangle X={50} Y={270} TY1="28" TX2="30" T1={"Xebia"} T2={"UK"} RectClick={_=> {AcademyHandler("UK")}} />
                                             </g>
                                         </svg>
                                         <svg x="400">
@@ -97,10 +266,10 @@ const XebiaGroup = _ => {
                                         </svg>
                                         <svg x="440">
                                             <g>
-                                                <Rectangle X={50} Y={90} TY1="28" TX1="20" TX2="15" T1={"Xebia"} T2={"Gurugram"} />
-                                                <Rectangle X={50} Y={150} TY1="28" T1={"Xebia"} TX2="25" T2={"Pune"} />
-                                                <Rectangle X={50} Y={210} TY1="28" TX2="15" T1={"Xebia"} T2={"Bangalore"} />
-                                                <Rectangle X={50} Y={270} TY1="28" TX2="15" T1={"Xebia"} T2={"Academy"} />
+                                                <Rectangle X={50} Y={90} TY1="28" TX1="20" TX2="15" T1={"Xebia"} T2={"Gurugram"} RectClick={_=> {AcademyHandler("Gurugram")}} />
+                                                <Rectangle X={50} Y={150} TY1="28" T1={"Xebia"} TX2="25" T2={"Pune"} RectClick={_=> {AcademyHandler("Pune")}} />
+                                                <Rectangle X={50} Y={210} TY1="28" TX2="15" T1={"Xebia"} T2={"Bangalore"} RectClick={_ => {AcademyHandler("Blr")}} />
+                                                <Rectangle X={50} Y={270} TY1="28" TX2="15" T1={"Xebia"} T2={"Academy"} RectClick={_ => {AcademyHandler("Academy") }} />
                                             </g>
                                         </svg>
                                     </g>
@@ -109,6 +278,42 @@ const XebiaGroup = _ => {
                     </g>
                 </svg>
                 </div>
+                <Row>
+                   
+                        {
+                          showAcademy == "Academy"?
+                          <Academy/>:""
+                        }   
+                        {
+                          showAcademy == "Blr"?
+                          <Bangalore/>:""
+                        }   
+                        {
+                          showAcademy == "Pune"?
+                          <Pune/>:""
+                        }  
+                        {
+                          showAcademy == "Gurugram"?
+                          <Gurugram/>:""
+                        }  
+                        {
+                          showAcademy == "XebiaUS"?
+                          <XebiaUS/>:""
+                        }  
+                        {
+                          showAcademy == "MiddleEast"?
+                          <MiddleEast/>:""
+                        }  
+                        {
+                          showAcademy == "India"?
+                          <Gurugram/>:""
+                        } 
+                        {
+                          showAcademy == "UK"?
+                          <XebiaUK/>:""
+                        } 
+                  
+                </Row>
             </div>
         </div>
     )

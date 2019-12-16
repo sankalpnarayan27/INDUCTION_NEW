@@ -48,7 +48,7 @@ const Policy = () => {
             <div className={"text-center flex-fill "} onClick={_ => onAwards(!ahidden)}>
               <div className="d-flex flex-column align-items-center card-heading">
                 <img width="50px" height="50px" alt="awards" src={awards} />
-                <span className="mt-2">Awards</span>
+                <span className="mt-2">Rewards &amp; Recognition</span>
               </div>
               <div className="card-content">
                 Award won by Xebia

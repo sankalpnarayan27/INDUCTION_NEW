@@ -50,7 +50,7 @@ const XebiaGroup = _ => {
                         </div>
                         <div>
                             <div>
-                                Karan Nanguru
+                                Vipul
                             </div>
                             <div>
                                Managing Director - Delivery

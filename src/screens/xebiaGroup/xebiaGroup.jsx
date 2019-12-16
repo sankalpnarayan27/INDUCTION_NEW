@@ -7,6 +7,8 @@ import ajay from '../../assets/group/ajaykabra.jpg';
 import vigit from '../../assets/group/vigit.jpg';
 import karan from '../../assets/group/karan.jpg';
 import anurag from '../../assets/group/anurag.png';
+import shankar from '../../assets/group/shankar.jpg';
+import deepak from '../../assets/group/deepak.jpg';
 const XebiaGroup = _ => {
     const [toggleGroup, RectClickHandler] = useState(false);
     const [showAcademy, AcademyHandler] = useState("none");
@@ -65,7 +67,7 @@ const XebiaGroup = _ => {
                     <div>
                         Xebia Middle East
                     </div>
-                    <div>
+                    <div className="col-md-6 col-sm-12" style={{float:"left"}}>
                         <div>
                             <img src={anurag} />
                         </div>
@@ -78,6 +80,19 @@ const XebiaGroup = _ => {
                             </div>
                         </div>
                     </div>
+                    <div className="col-md-6 col-sm-12" style={{float:"left"}}>
+                        <div>
+                            <img src={shankar} />
+                        </div>
+                        <div>
+                            <div>
+                                Shankar Garg
+                            </div>
+                            <div>
+                               Associate Director - Sales
+                            </div>
+                        </div>
+                    </div>
                 </div>
         )
     }
@@ -87,6 +102,29 @@ const XebiaGroup = _ => {
             <div className="academy">
                     <div>
                         Xebia Gurugram
+                    </div>
+                    <div>
+                        <div>
+                            <img src={madhur} />
+                        </div>
+                        <div>
+                            <div>
+                                Madhur Arya
+                            </div>
+                            <div>
+                                Head of Operations
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
+
+    const India = _ => {
+        return(
+            <div className="academy">
+                    <div>
+                        Xebia India
                     </div>
                     <div>
                         <div>
@@ -153,18 +191,31 @@ const XebiaGroup = _ => {
         return(
             <div className="academy">
                     <div>
-                        Pune
+                        Xebia Pune
                     </div>
-                    <div>
+                    <div className="col-md-6 col-sm-12" style={{float:"left"}}>
                         <div>
                             <img src={vigit} />
                         </div>
                         <div>
                             <div>
-                                Vijit Ghatge
+                                Vigit Ghatge
                             </div>
                             <div>
-                                Director - Sales
+                               Director - Sales
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-sm-12" style={{float:"left"}}>
+                        <div>
+                            <img src={deepak} />
+                        </div>
+                        <div>
+                            <div>
+                                Deepak Sharma
+                            </div>
+                            <div>
+                               Associate Director - Delivery
                             </div>
                         </div>
                     </div>
@@ -306,7 +357,7 @@ const XebiaGroup = _ => {
                         }  
                         {
                           showAcademy == "India"?
-                          <Gurugram/>:""
+                          <India/>:""
                         } 
                         {
                           showAcademy == "UK"?

@@ -56,7 +56,22 @@ const Pillars = () => {
                 </ul>
               </div>
             </div>
-          </div> : <div className="col-md-6"></div>
+          </div> : <div className="col-md-6">
+          <div className="col-md-12 Card-Description pillar-ml">
+              <div className="card-title h4">
+                {
+                  XebiaValues[0].Title
+                }
+              </div>
+              <div>
+                <ul>
+                  {
+                    XebiaValues[0].Description.map((x,i)=> <li key={i}>{x.bullet}</li>)
+                  }
+                </ul>
+              </div>
+            </div>
+          </div>
       }
       </div>
     </div>

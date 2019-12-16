@@ -103,7 +103,7 @@ const XebiaGroup = _ => {
                     <div>
                         Xebia Gurugram
                     </div>
-                    <div>
+                    <div className="col-md-6" style={{float:"left"}}>
                         <div>
                             <img src={madhur} />
                         </div>
@@ -115,6 +115,15 @@ const XebiaGroup = _ => {
                                 Head of Operations
                             </div>
                         </div>
+                    </div>
+                    <div className="col-md-6 hr" style={{float:"left",borderLeft: "1px solid #a98f8f",height: "60px",marginTop: "15px"}}>
+                        <div>
+                            Human Resource
+                        </div>
+                        <div style={{margin: 0}}>
+                            Anwar Khan   9654997087   anwarkhan@xebia.com
+                        </div>
+                        
                     </div>
                 </div>
         )
@@ -139,6 +148,15 @@ const XebiaGroup = _ => {
                             </div>
                         </div>
                     </div>
+                    <div className="col-md-6 hr" style={{float:"left",borderLeft: "1px solid #a98f8f",height: "60px",marginTop: "20px"}}>
+                        <div>
+                            Human Resource
+                        </div>
+                        <div style={{margin: 0}}>
+                            Anwar Khan   9654997087   anwarkhan@xebia.com
+                        </div>
+                        
+                    </div>
                 </div>
         )
     }
@@ -161,6 +179,15 @@ const XebiaGroup = _ => {
                                 Senior Director - XACT
                             </div>
                         </div>
+                    </div>
+                    <div className="col-md-6 hr" style={{float:"left",borderLeft: "1px solid #a98f8f",height: "75px", marginTop:"10px"}}>
+                        <div>
+                            Human Resource
+                        </div>
+                        <div style={{margin: 0}}>
+                            Sahil Bhatnagar   9953350705   sahil.bhatnagar@xebia.com
+                        </div>
+                        
                     </div>
                 </div>
         )
@@ -193,7 +220,7 @@ const XebiaGroup = _ => {
                     <div>
                         Xebia Pune
                     </div>
-                    <div className="col-md-6 col-sm-12" style={{float:"left"}}>
+                    <div className="col-md-4 col-sm-12" style={{float:"left"}}>
                         <div>
                             <img src={vigit} />
                         </div>
@@ -206,7 +233,7 @@ const XebiaGroup = _ => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-sm-12" style={{float:"left"}}>
+                    <div className="col-md-4 col-sm-12" style={{float:"left"}}>
                         <div>
                             <img src={deepak} />
                         </div>
@@ -218,6 +245,15 @@ const XebiaGroup = _ => {
                                Associate Director - Delivery
                             </div>
                         </div>
+                    </div>
+                    <div className="col-md-4 hr" style={{float:"left",borderLeft: "1px solid #a98f8f",height: "80px",marginTop: "50px"}}>
+                        <div>
+                            Human Resource
+                        </div>
+                        <div style={{margin: 0}}>
+                            Anwar Khan   9654997087   anwarkhan@xebia.com
+                        </div>
+                        
                     </div>
                 </div>
         )

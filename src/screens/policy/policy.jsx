@@ -42,7 +42,6 @@ const Policy = () => {
                 <span className="mt-2">Leave</span>
               </div>
               <div className="card-content">
-                Leaves at Xebia
               </div>
             </div>
             <div className={"text-center flex-fill "} onClick={_ => onAwards(!ahidden)}>
@@ -51,16 +50,16 @@ const Policy = () => {
                 <span className="mt-2">Rewards &amp; Recognition</span>
               </div>
               <div className="card-content">
-                Award won by Xebia
+                
               </div>
             </div>
             <div className={"text-center flex-fill "}>
               <div className="d-flex flex-column align-items-center card-heading">
                 <img width="50px" height="50px" alt="awards" src={performance} />
-                <span className="mt-2">Performance Appraisal</span>
+                <span className="mt-2">Performance Management</span>
               </div>
               <div className="card-content">
-                Performance Appraisal
+                
               </div>
             </div>
             {/*
@@ -85,7 +84,7 @@ const Policy = () => {
             <div className={"text-center flex-fill "}>
               <div className="d-flex flex-column align-items-center card-heading">
                 <img width="50px" height="50px" alt="awards" src={awards} />
-                <span className="mt-2">Earned leaves (EL)</span>
+                <span className="mt-2">Earned leave (EL)</span>
               </div>
               <div className="card-content">
                 15 in a year, Max 30 accumulated
@@ -94,7 +93,7 @@ const Policy = () => {
             <div className={"text-center flex-fill "}>
               <div className="d-flex flex-column align-items-center card-heading">
                 <img width="50px" height="50px" alt="awards" src={awards} />
-                <span className="mt-2">Casual/ Sick leaves (CSL)</span>
+                <span className="mt-2">Casual/ Sick leave (CSL)</span>
               </div>
               <div className="card-content">
                 11 in a year, Lapse at the end of the year

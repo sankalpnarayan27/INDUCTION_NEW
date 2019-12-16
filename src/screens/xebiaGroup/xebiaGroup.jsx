@@ -5,10 +5,10 @@ import madhur from '../../assets/group/madhur.png';
 import brijesh from '../../assets/group/brijesh.jpg';
 import ajay from '../../assets/group/ajaykabra.jpg';
 import vigit from '../../assets/group/vigit.jpg';
-import karan from '../../assets/group/karan.jpg';
 import anurag from '../../assets/group/anurag.png';
 import shankar from '../../assets/group/shankar.jpg';
 import deepak from '../../assets/group/deepak.jpg';
+import jyotendra from "../../assets/group/jyot.jpg";
 const XebiaGroup = _ => {
     const [toggleGroup, RectClickHandler] = useState(false);
     const [showAcademy, AcademyHandler] = useState("none");
@@ -46,7 +46,7 @@ const XebiaGroup = _ => {
                     </div>
                     <div>
                         <div>
-                            <img src={karan} />
+                            <img />
                         </div>
                         <div>
                             <div>
@@ -173,14 +173,14 @@ const XebiaGroup = _ => {
                     </div>
                     <div>
                         <div>
-                            <img />
+                            <img src={jyotendra} />
                         </div>
                         <div>
                             <div>
-                                Not Avaialble
+                                Jyotendra Thokchom
                             </div>
                             <div>
-                                Not Avaialble
+                                Sales Director
                             </div>
                         </div>
                     </div>

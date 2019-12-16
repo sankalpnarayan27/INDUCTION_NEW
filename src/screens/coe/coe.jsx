@@ -51,11 +51,15 @@ const Coe = _ => {
             src: mandeep
         }
     ];
+
     const scrollClients = direction => {
         let container = document.getElementById("coeslider");
-        slideHorizontally(container, direction, 10, 250, 10);
+        slideHorizontally(container, direction, 10, 400, 10);
     };
     const [coeInfo, descriptionHandler] = useState({ Title: "", Description: "", Clicked: -1 });
+
+    const [togglei,toggleIcon] = useState(["fa fa-circle","fa fa-dot-circle-o"]);
+
     const clickHandler = CoeInfo => {
 
         descriptionHandler(CoeInfo);
@@ -67,7 +71,7 @@ const Coe = _ => {
         let { Value, Handler, Title, SmallDescription, Src, Clicked } = props;
         let askArrow = Clicked == Value ? "" : "Hide-Arrow";
         useEffect(() => {
-
+            
         });
         return (
             <div className="card-wrapper">
@@ -104,8 +108,8 @@ const Coe = _ => {
                 </Row>
                 <div className="d-flex coearrows">
                     <div>
-                        <i className="fa fa-arrow-circle-left" onClick={() => scrollClients("left")}></i>
-                        <i className="fa fa-arrow-circle-right" onClick={() => scrollClients("right")}></i>
+                        <i className={togglei[0]} onClick={() => {scrollClients("left"); toggleIcon(["fa fa-circle","fa fa-dot-circle-o"]); }}></i>
+                        <i className={togglei[1]} onClick={() => {scrollClients("right"); toggleIcon(["fa fa-dot-circle-o","fa fa-circle"]);}}></i>
                     </div>
                 </div>
                 {
@@ -117,7 +121,7 @@ const Coe = _ => {
                                         coeInfo.Title
                                     }
                                 </div>
-                                <div>
+                                <div style={{fontSize:"18px"}}>
                                     {
                                         coeInfo.Description
                                     }

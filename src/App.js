@@ -2,15 +2,15 @@ import React, { Fragment } from 'react';
 import './App.scss';
 import Welcome from './Components/Welcome';
 import Origins from './Components/Origins';
-import Pillars from "./Components/Pillars";
-// import Clients from "./screens/clients/clients";
-// import Policy from "./screens/policy/policy";
-// import LifeAtXebia from "./screens/lifeAtXebia/lifeAtXebia";
-// import Coe from "./screens/coe/coe";
-// import Locations from './screens/locations/locations';
-// import XebiaGroup from "./screens/xebiaGroup/xebiaGroup";
-// import Tools from './screens/tools/tools';
-// import ThingsToRemember from './screens/ttoremember/thingstoremember';
+import Pillars from './Components/Pillars';
+import Locations from './Components/Locations';
+import XebiaGroup from "./Components/XebiaGroup";
+import COE from './Components/COE';
+import Clients from './Components/Clients';
+import Policy from './Components/Policy';
+import Tools from './Components/Tools';
+import LifeAtXebia from "./Components/LifeAtXebia";
+import ThingsToRemember from './Components/ToRemember';
 
 function App() {
   return (
@@ -18,14 +18,14 @@ function App() {
       <Welcome />
       <Origins />
       <Pillars />
-      {/* <Locations />
+      <Locations />
       <XebiaGroup />
-      <Coe />
+      <COE />
       <Clients />
       <Policy />
       <ThingsToRemember />
       <Tools/>
-      <LifeAtXebia /> */}
+      <LifeAtXebia />
     </Fragment>
   );
 }

@@ -1,8 +1,7 @@
-import React from "react";
-import "./clients.scss";
-import clientsData from "./clientsData";
-import { getImage } from "../../utils/getImage";
-import { slideHorizontally } from "../../utils/slideHorizontatlly";
+import React from 'react';
+import './clients.scss';
+import clientsData from './clientsData';
+import { slideHorizontally } from '../../utils/slideHorizontatlly';
 const Clients = () => {
   const getClients = () => {
     return clientsData.clients.map((client, index) => {

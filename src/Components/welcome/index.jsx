@@ -1,8 +1,8 @@
-import React from "react";
-import "./welcome.scss";
-import xebiaLogo from "../../assets/Group_161.svg";
-import welcome from "../../assets/welcome.svg";
-import { Link } from "react-scroll";
+import React from 'react';
+import './welcome.scss';
+import xebiaLogo from '../../assets/Group_161.svg';
+import welcome from '../../assets/welcome.svg';
+import { Link } from 'react-scroll';
 
 const Welcome = () => {
   return (

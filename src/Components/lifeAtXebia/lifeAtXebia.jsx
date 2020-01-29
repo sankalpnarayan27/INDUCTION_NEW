@@ -6,7 +6,7 @@ import gallery from "../../assets/icons/attach.svg";
 import cares from "../../assets/icons/worldwide.svg";
 import bornImage from "../../assets/images/born.svg";
 import * as gPhotos from "./gallery.jsx";
-import { Modal, Button, Container, Row, Col } from "react-bootstrap";
+import { Modal, Container, Row } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel'
 import Lightbox from 'react-image-gallery';
 import { animateScroll as Scroll } from 'react-scroll';

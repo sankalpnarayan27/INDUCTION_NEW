@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./coe.scss";
-import { Card, Button, Col, Row } from "react-bootstrap";
+import { Card, Row } from "react-bootstrap";
 
 import Ajay from '../../assets/images/ajaykabra.jpg';
 import vikasmittal from '../../assets/images/vikasmittal.jpg';
@@ -75,7 +75,7 @@ const Coe = _ => {
         });
         return (
             <div className="card-wrapper">
-                <Card className="box-shadow" onClick={_ => Handler({ ...props, Clicked: Value })}>
+                <Card className="box-shadow" onClick={() => Handler({ ...props, Clicked: Value })}>
                     <Card.Img variant="top" src={Src} />
                     <Card.Body>
                         <Card.Title>{Title}</Card.Title>

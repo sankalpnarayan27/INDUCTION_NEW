@@ -88,7 +88,7 @@
   "devDependencies": {
     "gh-pages": "^2.2.0"
   },
-  "homepage": "https://sankalpnarayan27.github.io/INDUCTION_NEW/",
+  "homepage": "https://govind-xebia.github.io/xebia_induction/",
   "jest": {
     "roots": [
       "<rootDir>/src"

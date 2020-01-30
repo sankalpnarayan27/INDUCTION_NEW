@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from './node_modules/react';
 import './coe.scss';
-import { Card, Row } from 'react-bootstrap';
+import { Card, Row } from './node_modules/react-bootstrap';
 
 import Ajay from '../../assets/images/ajaykabra.jpg';
 import vikasmittal from '../../assets/images/vikasmittal.jpg';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from './node_modules/react';
 import './locations.scss';
 import connection from '../../assets/icons/connection.svg';
 import globe from '../../assets/icons/worldwide.svg';

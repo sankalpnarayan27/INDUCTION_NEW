@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from './node_modules/react';
 import './policy.scss';
 import policy from '../../assets/images/policy.png';
 import leaves from '../../assets/icons/sun-umbrella.svg';

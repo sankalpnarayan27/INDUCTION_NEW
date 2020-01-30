@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'react-bootstrap';
 // import xebiaLogo from '../../assets/Group_161.svg';
 // import welcome from '../../assets/welcome.svg';
 // import { Link } from 'react-scroll';
@@ -28,5 +29,8 @@ import './welcome.scss';
 // };
 
 export default () => (
-
+  <Row>
+    <Col>
+    </Col>
+  </Row>
 );

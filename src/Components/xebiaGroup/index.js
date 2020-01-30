@@ -8,7 +8,7 @@ import vigit from '../../assets/group/vigit.jpg';
 import anurag from '../../assets/group/anurag.png';
 import shankar from '../../assets/group/shankar.jpg';
 import deepak from '../../assets/group/deepak.jpg';
-import jyotendra from "../../assets/group/jyot.jpg";
+import jyotendra from '../../assets/group/jyot.jpg';
 const XebiaGroup = _ => {
     const [toggleGroup, RectClickHandler] = useState(false);
     const [showAcademy, AcademyHandler] = useState("none");

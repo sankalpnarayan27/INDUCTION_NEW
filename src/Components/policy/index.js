@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "./policy.scss";
-import policy from "../../assets/images/policy.png";
-import leaves from "../../assets/icons/sun-umbrella.svg";
-import awards from "../../assets/icons/trophy.svg";
-import performance from "../../assets/icons/diamond.svg";
+import React, { useState, useEffect } from 'react';
+import './policy.scss';
+import policy from '../../assets/images/policy.png';
+import leaves from '../../assets/icons/sun-umbrella.svg';
+import awards from '../../assets/icons/trophy.svg';
+import performance from '../../assets/icons/diamond.svg';
 const Policy = () => {
   const [hidden, onLeaves] = useState(false);
   const [ahidden, onAwards] = useState(false);

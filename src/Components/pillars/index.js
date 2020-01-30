@@ -1,19 +1,14 @@
-import React,{useState, useEffect} from "react";
-import "./pillars.scss";
-import XebiaValues from "./XebiaValues";
-import { Card, Button, Col, Row } from "react-bootstrap";
+import React,{ useState } from 'react';
+import './pillars.scss';
+import XebiaValues from './XebiaValues';
 
 const Pillars = () => {
 
   const [coeInfo, descriptionHandler] = useState({ Title: "", Description: "", Clicked: -1 });
 
-  
-  useEffect(() => {
-    //console.log(coeInfo);
-  })
   const Values = props => {
-    let { Value, Clicked , Handler } = props;
-    let askArrow = Clicked == Value ? "" : "Hide-Arrow";
+    let { Value, Handler } = props;
+    // let askArrow = Clicked == Value ? "" : "Hide-Arrow";
     return (
       <div className="pillar-ml">
         <div className="pillar-card col-12" onClick={ _=>Handler({Title: props.Title, Description: props.Description, Clicked: Value})}>
@@ -40,7 +35,7 @@ const Pillars = () => {
         }
       </div>
       {
-        coeInfo.Clicked != -1 ?
+        coeInfo.Clicked !== -1 ?
           <div className="col-md-6">
             <div className="col-md-12 Card-Description pillar-ml">
               <div className="card-title h4">

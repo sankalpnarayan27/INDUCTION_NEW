@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "./coe.scss";
-import { Card, Button, Col, Row } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import './coe.scss';
+import { Card, Row } from 'react-bootstrap';
 
 import Ajay from '../../assets/images/ajaykabra.jpg';
 import vikasmittal from '../../assets/images/vikasmittal.jpg';
@@ -8,9 +8,7 @@ import ram from '../../assets/images/ram.png';
 import shekhargulati from '../../assets/images/shekhargulati.png';
 import vikasthareja from '../../assets/images/vikasthareja.png';
 import mandeep from '../../assets/images/mandeep.png';
-import { slideHorizontally } from "../../utils/slideHorizontatlly";
-import { relative } from "path";
-
+import { slideHorizontally } from '../../utils/slideHorizontatlly';
 
 const Coe = _ => {
     const coeList = [
@@ -75,7 +73,7 @@ const Coe = _ => {
         });
         return (
             <div className="card-wrapper">
-                <Card className="box-shadow" onClick={_ => Handler({ ...props, Clicked: Value })}>
+                <Card className="box-shadow" onClick={() => Handler({ ...props, Clicked: Value })}>
                     <Card.Img variant="top" src={Src} />
                     <Card.Body>
                         <Card.Title>{Title}</Card.Title>

@@ -5,7 +5,6 @@ export const slideHorizontally = (
   distance,
   step
 ) => {
-  console.log(direction, element);
   let scrollAmount = 0;
   var slideTimer = setInterval(function() {
     if (direction === "left") {

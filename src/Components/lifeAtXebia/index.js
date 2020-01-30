@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import "./lifeAtXebia.scss";
-import lifeAtXebia from "../../assets/images/lifeAtXebia.svg";
-import events from "../../assets/icons/calendar.svg";
-import gallery from "../../assets/icons/attach.svg";
-import cares from "../../assets/icons/worldwide.svg";
-import bornImage from "../../assets/images/born.svg";
-import * as gPhotos from "./gallery.jsx";
-import { Modal, Button, Container, Row, Col } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import './lifeAtXebia.scss';
+import lifeAtXebia from '../../assets/images/lifeAtXebia.svg';
+import events from '../../assets/icons/calendar.svg';
+import gallery from '../../assets/icons/attach.svg';
+import cares from '../../assets/icons/worldwide.svg';
+import bornImage from '../../assets/images/born.svg';
+import * as gPhotos from './gallery.jsx';
+import { Modal, Container, Row } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
 import Lightbox from 'react-image-gallery';
 import { animateScroll as Scroll } from 'react-scroll';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Welcome from './Components/Welcome';
 // import Origins from './Components/Origins';
 // import Pillars from './Components/Pillars';
@@ -12,7 +12,7 @@ import Welcome from './Components/Welcome';
 // import LifeAtXebia from "./Components/LifeAtXebia";
 // import ThingsToRemember from './Components/ToRemember';
 
-import './App.scss';
+import styles from './App.scss';
 
 function App() {
   return (

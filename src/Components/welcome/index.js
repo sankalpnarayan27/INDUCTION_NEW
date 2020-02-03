@@ -1,32 +1,32 @@
 import React from 'react';
-// import xebiaLogo from '../../assets/Group_161.svg';
-// import welcome from '../../assets/welcome.svg';
-// import { Link } from 'react-scroll';
-import './welcome.scss';
-
-// const Welcome3 = () => {
-//   return (
-//     <div className="welcome-container screen-container d-flex justify-content-between align-items-center">
-//       <div className="d-flex justify-content-center justify-content-lg-between align-items-center flex-fill flex-wrap">
-//         <div className="d-flex flex-column justify-content-start p-4">
-//           <div className="welcome-title">
-//             <span>Welcome To</span>
-//           </div>
-//           <div className="mb-3">
-//             <img alt="welcome" className="mw-100" src={welcome} />
-//           </div>
-//           <div>
-//             <Link to="born-in-netherland" spy={true} smooth={true} duration={1000} className="btn grey2-bg">We were born in</Link>
-//           </div>
-//         </div>
-//         <div className="d-flex align-items-center group-image p-4">
-//           <img alt="xebia" src={xebiaLogo} />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+import { Row, Col, Button, Image } from 'react-bootstrap';
+import xebiaLogo from './xebiaLogo.svg';
+import welcome from './welcome.png';
+import styles from './Welcome.module.scss';
 
 export default () => (
-
+  <Row className={styles.welcomeWrapper}>
+    <Col>
+      <Row className={styles.welcomeText}>
+        <Col>
+          <h1>
+            welcome to
+          </h1>
+        </Col>
+        <Col className={styles.imageMargin}>
+          <Image alt="welcome" src={xebiaLogo} fluid />
+        </Col>
+        <Col>
+          <Button
+            type="button"
+          >
+            We were born in
+          </Button>
+        </Col>
+      </Row>
+    </Col>
+    <Col className={styles.welcomeImage}>
+      <Image alt="welcome" src={welcome} fluid />
+    </Col>
+  </Row>
 );

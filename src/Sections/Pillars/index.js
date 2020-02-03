@@ -15,7 +15,7 @@ export default () => {
         <Row>
           {
             cardContent.map(cardProps => (
-              <Col md={6} className={styles.cardCol}>
+              <Col sm={6} className={styles.cardCol}>
                 <XebiaCard
                   {...cardProps}
                 />

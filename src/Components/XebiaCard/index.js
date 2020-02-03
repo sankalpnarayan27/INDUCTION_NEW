@@ -9,7 +9,7 @@ export default ({
   icon,
   active = false
 }) => (
-  <Card className={`${styles.xebiaCard} ${active ? 'active' : ''}`}>
+  <Card className={`${styles.xebiaCard} ${active ? styles.active : ''}`}>
     <Card.Body>
       <Image
         fluid

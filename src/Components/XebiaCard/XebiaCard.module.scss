@@ -1,0 +1,38 @@
+@import '../../styles/colors';
+
+.xebiaCard{
+  height: 22.5rem;
+  width: 22.5rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  border-color: $grey-3;
+  margin: 0 auto;
+  &:hover{
+    cursor: pointer;
+  }
+  
+  img{
+    margin-top: 1.5rem
+  }
+  h4{
+    margin-top: 1.5rem;
+  }
+  p{
+    margin-top: 3.25rem;
+  }
+}
+.active{
+  &::before, &::after{
+    cursor: pointer;
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:50%;
+    box-shadow: 0 0 0.8rem $grey-1;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+  }
+}

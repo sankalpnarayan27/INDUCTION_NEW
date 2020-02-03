@@ -1,32 +1,25 @@
-import React from "react";
-import "./App.scss";
-import Welcome from "../src/screens/welcome/welcome";
-import BornInNetherlands from "./screens/bornInNetherlands/bornInNetherlands";
-import Pillars from "./screens/pillars/pillars";
-import Clients from "./screens/clients/clients";
-import Policy from "./screens/policy/policy";
-import LifeAtXebia from "./screens/lifeAtXebia/lifeAtXebia";
-import Coe from "./screens/coe/coe";
-import Locations from './screens/locations/locations';
-import XebiaGroup from "./screens/xebiaGroup/xebiaGroup";
-import Tools from './screens/tools/tools';
-import ThingsToRemember from './screens/ttoremember/thingstoremember';
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import Welcome from './Components/Welcome';
+import Origins from './Components/Origins';
+// import Pillars from './Components/Pillars';
+// import Locations from './Components/Locations';
+// import XebiaGroup from "./Components/XebiaGroup";
+// import COE from './Components/COE';
+// import Clients from './Components/Clients';
+// import Policy from './Components/Policy';
+// import Tools from './Components/Tools';
+// import LifeAtXebia from "./Components/LifeAtXebia";
+// import ThingsToRemember from './Components/ToRemember';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <Container fluid>
       <Welcome />
-      <BornInNetherlands />
-      <Pillars />
-      <Locations />
-      <XebiaGroup />
-      <Coe />
-      <Clients />
-      <Policy />
-      <ThingsToRemember />
-      <Tools/>
-      <LifeAtXebia />
-    </div>
+      <Origins />
+    </Container>
   );
 }
 

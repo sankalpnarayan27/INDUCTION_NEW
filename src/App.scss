@@ -1,25 +1,16 @@
-@import "./styles/media.scss";
-@import "./styles/colors.scss";
+@import '~bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-.screen-container {
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 1100px;
-  min-height: 100vh;
-  margin: 0 auto;
-  .grey2-bg {
-    background: $grey-2;
-    color: white !important;
-  }
-  .btn {
-    cursor: pointer;
-    width: 181px;
-    height: 55px;
-    background: #9D92B2 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 6px #00000029;
-    border-radius: 4px;
-    opacity: 1;
-    line-height: 37px;
-  }
- 
+html{
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.container-fluid{
+  width: 90% !important;
 }

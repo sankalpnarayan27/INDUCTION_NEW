@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import Welcome from './Sections/Welcome';
 import Origins from './Sections/Origins';
 import Pillars from './Sections/Pillars';
-// import Locations from './Sections/Locations';
+import Locations from './Sections/Locations';
 // import XebiaGroup from "./Sections/XebiaGroup";
 // import COE from './Sections/COE';
 // import Clients from './Sections/Clients';
@@ -20,6 +20,7 @@ function App() {
       <Welcome />
       <Origins />
       <Pillars />
+      <Locations />
     </Container>
   );
 }

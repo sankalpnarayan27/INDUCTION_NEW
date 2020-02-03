@@ -1,6 +1,6 @@
-import peopleFirst from "./icons/team.svg";
-import sharingKnowledge from "./icons/meeting.svg";
-import customerIntimacy from "./icons/target.svg";
+import peopleFirst from "./icons/people.svg";
+import sharingKnowledge from "./icons/knowledge.svg";
+import customerIntimacy from "./icons/customer.svg";
 import quality from "./icons/quality.svg";
 
 export default {

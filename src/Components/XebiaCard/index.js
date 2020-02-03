@@ -1,8 +1,26 @@
 import React from 'react';
-import {  } from 'react-bootstrap';
+import { Card, Image } from 'react-bootstrap';
 
 import styles from './XebiaCard.module.scss';
 
-export default () => {
-
-}
+export default ({
+  title,
+  desc,
+  icon,
+  active = false
+}) => (
+  <Card className={`${styles.xebiaCard} ${active ? 'active' : ''}`}>
+    <Card.Body>
+      <Image
+        fluid
+        src={icon}
+      />
+      <h4>
+        {title}
+      </h4>
+      <p>
+        {desc}
+      </p>
+    </Card.Body>
+  </Card>
+);

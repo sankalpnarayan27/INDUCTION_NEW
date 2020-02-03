@@ -1,5 +1,6 @@
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
+import XebiaCard from '../../Components/XebiaCard';
 
 import styles from './Pillars.module.scss';
 
@@ -11,7 +12,17 @@ export default () => {
   return(
     <Row className={styles.pillarsWrapper}>
       <Col>
-        cards
+        <Row>
+          {
+            cardContent.map(cardProps => (
+              <Col md={6} className={styles.cardCol}>
+                <XebiaCard
+                  {...cardProps}
+                />
+              </Col>
+            ))
+          }
+        </Row>
       </Col>
       <Col>
         content

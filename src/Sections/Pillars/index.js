@@ -49,22 +49,26 @@ export default () => {
         </Row>
       </Col>
       <Col>
-        <Card>
-          <Card.Title>
-            {loadedContent.title}
-          </Card.Title>
-          <Card.Body>
-            <ul>
-              {
-                loadedContent.content.map(item => (
-                  <li key={item}>
-                    {item}
-                  </li>
-                ))
-              }
-            </ul>
-          </Card.Body>
-        </Card>
+        <Row>
+          <Col className={styles.contentCol}>
+            <Card className={styles.contentCard}>
+              <Card.Title>
+                {loadedContent.title}
+              </Card.Title>
+              <Card.Body>
+                <ul>
+                  {
+                    loadedContent.content.map(item => (
+                      <li key={item}>
+                        {item}
+                      </li>
+                    ))
+                  }
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Col>
     </Row>
   )

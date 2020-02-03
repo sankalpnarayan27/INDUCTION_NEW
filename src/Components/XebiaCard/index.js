@@ -7,20 +7,27 @@ export default ({
   title,
   desc,
   icon,
-  active = false
-}) => (
-  <Card className={`${styles.xebiaCard} ${active ? styles.active : ''}`}>
-    <Card.Body>
-      <Image
-        fluid
-        src={icon}
-      />
-      <h4>
-        {title}
-      </h4>
-      <p>
-        {desc}
-      </p>
-    </Card.Body>
-  </Card>
-);
+  active,
+  handleClick
+}) => {
+  return (
+    <Card 
+      role="presentation" 
+      onClick={() => handleClick(title)} 
+      className={`${styles.xebiaCard} ${active ? styles.active : ''}`}
+    >
+      <Card.Body>
+        <Image
+          fluid
+          src={icon}
+        />
+        <h4>
+          {title}
+        </h4>
+        <p>
+          {desc}
+        </p>
+      </Card.Body>
+    </Card>
+  )
+};

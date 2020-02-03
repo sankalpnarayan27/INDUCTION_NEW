@@ -1,23 +1,47 @@
 import React, { useState } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 import XebiaCard from '../../Components/XebiaCard';
 
 import styles from './Pillars.module.scss';
 
 import data from './pillarsData';
 
+const { cardContent, sectionData } = data;
 export default () => {
-  const { cardContent, sectionData } = data;
-  console.log(cardContent, sectionData);
+
+  const toCamelCase = str => str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(word, index) {
+    return index === 0 ? word.toLowerCase() : word.toUpperCase();
+  }).replace(/\s+/g, '');
+
+  const [loadedContent, setContent] = useState({
+    title: 'People First',
+    content: sectionData[toCamelCase('People First')]
+  });
+
+  const handleClick = title => {
+    const content = {
+      title,
+      content: sectionData[toCamelCase(title)]
+    } 
+    setContent(content);
+  }
+
   return(
     <Row className={styles.pillarsWrapper}>
       <Col>
         <Row>
           {
             cardContent.map(cardProps => (
-              <Col sm={6} className={styles.cardCol}>
+              <Col 
+                key={cardProps.title}
+                sm={6} 
+                className={styles.cardCol}
+              >
                 <XebiaCard
                   {...cardProps}
+                  role="presentation"
+                  active={cardProps.title === loadedContent.title}
+                  handleClick={handleClick}
                 />
               </Col>
             ))
@@ -25,7 +49,22 @@ export default () => {
         </Row>
       </Col>
       <Col>
-        content
+        <Card>
+          <Card.Title>
+            {loadedContent.title}
+          </Card.Title>
+          <Card.Body>
+            <ul>
+              {
+                loadedContent.content.map(item => (
+                  <li key={item}>
+                    {item}
+                  </li>
+                ))
+              }
+            </ul>
+          </Card.Body>
+        </Card>
       </Col>
     </Row>
   )

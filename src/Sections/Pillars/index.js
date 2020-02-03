@@ -1,6 +1,25 @@
-import React,{ useState } from './node_modules/react';
-import './pillars.scss';
-import XebiaValues from './pillarsData';
+import React,{ useState } from 'react';
+import { Row, Col } from 'react-bootstrap';
+
+import styles from './Pillars.module.scss';
+
+import data from './pillarsData';
+
+export default () => {
+  const { cardContent, sectionData } = data;
+  console.log(cardContent, sectionData);
+  return(
+    <Row className={styles.pillarsWrapper}>
+      <Col>
+        cards
+      </Col>
+      <Col>
+        content
+      </Col>
+    </Row>
+  )
+};
+
 
 // const Pillars = () => {
 
@@ -72,11 +91,3 @@ import XebiaValues from './pillarsData';
 //     </div>
 //   );
 // };
-
-export default () => {
-  return(
-    <div>
-      Pillars
-    </div>
-  )
-};

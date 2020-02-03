@@ -1,16 +1,16 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Welcome from './Components/Welcome';
-import Origins from './Components/Origins';
-// import Pillars from './Components/Pillars';
-// import Locations from './Components/Locations';
-// import XebiaGroup from "./Components/XebiaGroup";
-// import COE from './Components/COE';
-// import Clients from './Components/Clients';
-// import Policy from './Components/Policy';
-// import Tools from './Components/Tools';
-// import LifeAtXebia from "./Components/LifeAtXebia";
-// import ThingsToRemember from './Components/ToRemember';
+import Welcome from './Sections/Welcome';
+import Origins from './Sections/Origins';
+import Pillars from './Sections/Pillars';
+// import Locations from './Sections/Locations';
+// import XebiaGroup from "./Sections/XebiaGroup";
+// import COE from './Sections/COE';
+// import Clients from './Sections/Clients';
+// import Policy from './Sections/Policy';
+// import Tools from './Sections/Tools';
+// import LifeAtXebia from "./Sections/LifeAtXebia";
+// import ThingsToRemember from './Sections/ToRemember';
 
 import './App.scss';
 
@@ -19,6 +19,7 @@ function App() {
     <Container fluid>
       <Welcome />
       <Origins />
+      <Pillars />
     </Container>
   );
 }

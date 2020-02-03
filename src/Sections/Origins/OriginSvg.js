@@ -6,56 +6,56 @@ export default () => (
       <filter id="c" x="41.767" y="21.336" width="570.466" height="485.875" filterUnits="userSpaceOnUse">
         <feOffset input="SourceAlpha"/>
         <feGaussianBlur stdDeviation="1" result="d"/>
-        <feFlood flood-opacity="0.149"/>
+        <feFlood floodOpacity="0.149"/>
         <feComposite operator="in" in2="d"/>
         <feComposite in="SourceGraphic"/>
       </filter>
       <filter id="f" x="17.673" y="105.151" width="526.661" height="447.496" filterUnits="userSpaceOnUse">
         <feOffset input="SourceAlpha"/>
         <feGaussianBlur stdDeviation="1" result="g"/>
-        <feFlood flood-opacity="0.149"/>
+        <feFlood floodOpacity="0.149"/>
         <feComposite operator="in" in2="g"/>
         <feComposite in="SourceGraphic"/>
       </filter>
       <filter id="i" x="417.955" y="413.828" width="154.717" height="145.523" filterUnits="userSpaceOnUse">
         <feOffset input="SourceAlpha"/>
         <feGaussianBlur stdDeviation="1" result="j"/>
-        <feFlood flood-opacity="0.149"/>
+        <feFlood floodOpacity="0.149"/>
         <feComposite operator="in" in2="j"/>
         <feComposite in="SourceGraphic"/>
       </filter>
       <filter id="l" x="302.977" y="0" width="111.797" height="114.302" filterUnits="userSpaceOnUse">
         <feOffset input="SourceAlpha"/>
         <feGaussianBlur stdDeviation="1" result="m"/>
-        <feFlood flood-opacity="0.149"/>
+        <feFlood floodOpacity="0.149"/>
         <feComposite operator="in" in2="m"/>
         <feComposite in="SourceGraphic"/>
       </filter>
       <filter id="o" x="436.384" y="65.407" width="46.485" height="45.583" filterUnits="userSpaceOnUse">
         <feOffset input="SourceAlpha"/>
         <feGaussianBlur stdDeviation="1" result="p"/>
-        <feFlood flood-opacity="0.149"/>
+        <feFlood floodOpacity="0.149"/>
         <feComposite operator="in" in2="p"/>
         <feComposite in="SourceGraphic"/>
       </filter>
       <filter id="s" x="542.014" y="162.773" width="57.314" height="56.297" filterUnits="userSpaceOnUse">
         <feOffset dx="1" dy="1" input="SourceAlpha"/>
         <feGaussianBlur stdDeviation="0.5" result="t"/>
-        <feFlood flood-opacity="0.149"/>
+        <feFlood floodOpacity="0.149"/>
         <feComposite operator="in" in2="t"/>
         <feComposite in="SourceGraphic"/>
       </filter>
       <filter id="u" x="27.922" y="200.587" width="515" height="236" filterUnits="userSpaceOnUse">
         <feOffset dy="5" input="SourceAlpha"/>
         <feGaussianBlur stdDeviation="12" result="v"/>
-        <feFlood flood-opacity="0.161"/>
+        <feFlood floodOpacity="0.161"/>
         <feComposite operator="in" in2="v"/>
         <feComposite in="SourceGraphic"/>
       </filter>
       <filter id="w" x="54.922" y="392.587" width="175" height="57" filterUnits="userSpaceOnUse">
         <feOffset dy="3" input="SourceAlpha"/>
         <feGaussianBlur stdDeviation="3" result="x"/>
-        <feFlood flood-opacity="0.161"/>
+        <feFlood floodOpacity="0.161"/>
         <feComposite operator="in" in2="x"/>
         <feComposite in="SourceGraphic"/>
       </filter>
@@ -104,15 +104,15 @@ export default () => (
           </g>
           <circle cx="8.534" cy="8.534" r="8.534" transform="translate(20.354 156.939)" style={{ fill: "url(#q)" }}/>
           <g transform="translate(13.374 58.424)">
-            <path class="i" d="M161.835,225.54a9.842,9.842,0,1,0,9.842,9.842A9.851,9.851,0,0,0,161.835,225.54Zm0,17.066a7.225,7.225,0,1,1,7.227-7.224A7.233,7.233,0,0,1,161.835,242.606Z" transform="translate(200.735 269.787)"/>
-            <path class="i" d="M71.712,66.4a9.842,9.842,0,1,0,9.842,9.842A9.85,9.85,0,0,0,71.712,66.4Zm0,17.066a7.225,7.225,0,1,1,7.224-7.224A7.233,7.233,0,0,1,71.712,83.467Z" transform="translate(19.936 -49.467)"/>
-            <path class="i" d="M209.32,101.65h-4.365V97.285a1.309,1.309,0,0,0-2.618,0v4.365h-4.365a1.308,1.308,0,1,0,0,2.615h4.365v4.365a1.309,1.309,0,1,0,2.618,0v-4.365h4.365a1.308,1.308,0,1,0,0-2.615Z" transform="translate(290.351 9.866)"/>
-            <path class="i" d="M103.869,232.164H99.5V227.8a1.308,1.308,0,0,0-2.615,0v4.365H92.524a1.309,1.309,0,0,0,0,2.618h4.365v4.365a1.308,1.308,0,1,0,2.615,0v-4.365h4.365a1.309,1.309,0,0,0,0-2.618Z" transform="translate(78.808 271.695)"/>
-            <path class="i" d="M236.894,194.014h-4.365v-4.365a1.308,1.308,0,0,0-2.615,0v4.365h-4.365a1.308,1.308,0,0,0,0,2.615h4.365v4.365a1.308,1.308,0,0,0,2.615,0v-4.365h4.365a1.308,1.308,0,0,0,0-2.615Z" transform="translate(345.675 195.161)"/>
-            <path class="i" d="M82.35,66.444H77.985V62.079a1.309,1.309,0,1,0-2.618,0v4.365H71a1.308,1.308,0,0,0,0,2.615h4.365v4.365a1.309,1.309,0,0,0,2.618,0V69.059H82.35a1.308,1.308,0,1,0,0-2.615Z" transform="translate(35.632 -60.768)"/>
-            <path class="i" d="M175.632,237.507h-4.365v-4.365a1.309,1.309,0,0,0-2.618,0v4.365h-4.365a1.308,1.308,0,0,0,0,2.615h4.365v4.368a1.309,1.309,0,0,0,2.618,0v-4.368h4.365a1.308,1.308,0,0,0,0-2.615Z" transform="translate(222.769 282.414)"/>
-            <path class="i" d="M47.31,111.984H42.945v-4.365a1.308,1.308,0,0,0-2.615,0v4.365H35.965a1.309,1.309,0,0,0,0,2.618H40.33v4.365a1.308,1.308,0,0,0,2.615,0V114.6H47.31a1.309,1.309,0,0,0,0-2.618Z" transform="translate(-34.657 30.598)"/>
-            <path class="i" d="M134.018,72.094h-4.365V67.729a1.309,1.309,0,0,0-2.618,0v4.365H122.67a1.309,1.309,0,0,0,0,2.618h4.365v4.365a1.309,1.309,0,0,0,2.618,0V74.712h4.365a1.309,1.309,0,0,0,0-2.618Z" transform="translate(139.285 -49.427)"/>
+            <path className="i" d="M161.835,225.54a9.842,9.842,0,1,0,9.842,9.842A9.851,9.851,0,0,0,161.835,225.54Zm0,17.066a7.225,7.225,0,1,1,7.227-7.224A7.233,7.233,0,0,1,161.835,242.606Z" transform="translate(200.735 269.787)"/>
+            <path className="i" d="M71.712,66.4a9.842,9.842,0,1,0,9.842,9.842A9.85,9.85,0,0,0,71.712,66.4Zm0,17.066a7.225,7.225,0,1,1,7.224-7.224A7.233,7.233,0,0,1,71.712,83.467Z" transform="translate(19.936 -49.467)"/>
+            <path className="i" d="M209.32,101.65h-4.365V97.285a1.309,1.309,0,0,0-2.618,0v4.365h-4.365a1.308,1.308,0,1,0,0,2.615h4.365v4.365a1.309,1.309,0,1,0,2.618,0v-4.365h4.365a1.308,1.308,0,1,0,0-2.615Z" transform="translate(290.351 9.866)"/>
+            <path className="i" d="M103.869,232.164H99.5V227.8a1.308,1.308,0,0,0-2.615,0v4.365H92.524a1.309,1.309,0,0,0,0,2.618h4.365v4.365a1.308,1.308,0,1,0,2.615,0v-4.365h4.365a1.309,1.309,0,0,0,0-2.618Z" transform="translate(78.808 271.695)"/>
+            <path className="i" d="M236.894,194.014h-4.365v-4.365a1.308,1.308,0,0,0-2.615,0v4.365h-4.365a1.308,1.308,0,0,0,0,2.615h4.365v4.365a1.308,1.308,0,0,0,2.615,0v-4.365h4.365a1.308,1.308,0,0,0,0-2.615Z" transform="translate(345.675 195.161)"/>
+            <path className="i" d="M82.35,66.444H77.985V62.079a1.309,1.309,0,1,0-2.618,0v4.365H71a1.308,1.308,0,0,0,0,2.615h4.365v4.365a1.309,1.309,0,0,0,2.618,0V69.059H82.35a1.308,1.308,0,1,0,0-2.615Z" transform="translate(35.632 -60.768)"/>
+            <path className="i" d="M175.632,237.507h-4.365v-4.365a1.309,1.309,0,0,0-2.618,0v4.365h-4.365a1.308,1.308,0,0,0,0,2.615h4.365v4.368a1.309,1.309,0,0,0,2.618,0v-4.368h4.365a1.308,1.308,0,0,0,0-2.615Z" transform="translate(222.769 282.414)"/>
+            <path className="i" d="M47.31,111.984H42.945v-4.365a1.308,1.308,0,0,0-2.615,0v4.365H35.965a1.309,1.309,0,0,0,0,2.618H40.33v4.365a1.308,1.308,0,0,0,2.615,0V114.6H47.31a1.309,1.309,0,0,0,0-2.618Z" transform="translate(-34.657 30.598)"/>
+            <path className="i" d="M134.018,72.094h-4.365V67.729a1.309,1.309,0,0,0-2.618,0v4.365H122.67a1.309,1.309,0,0,0,0,2.618h4.365v4.365a1.309,1.309,0,0,0,2.618,0V74.712h4.365a1.309,1.309,0,0,0,0-2.618Z" transform="translate(139.285 -49.427)"/>
           </g>
           <g transform="matrix(1, 0, 0, 1, 0, -3)" style={{ filter: "url(#s)" }} >
             <path d="M233.308,95.453a24.959,24.959,0,0,1,4.353-.739c11.892-.917,24.356,7.96,26.806,19.693,2.94,14.081-6.821,29.689-20.839,32.926s-29.788-6.758-32.566-20.875C208.381,112.819,220.111,98.9,233.308,95.453Z" transform="translate(331.84 68.63)" style={{ fill: "url(#r)" }} />

@@ -24,15 +24,14 @@
 .active{
   &::before, &::after{
     cursor: pointer;
-    content:"";
-    position:absolute;
-    z-index:-1;
-    top:50%;
-    box-shadow: 0 0 0.8rem $grey-1;
-    bottom:0;
-    left:10px;
-    right:10px;
-    -moz-border-radius:100px / 10px;
-    border-radius:100px / 10px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    box-shadow: 0 0 0.5rem $grey-1;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-radius: 100px/10px;
   }
 }

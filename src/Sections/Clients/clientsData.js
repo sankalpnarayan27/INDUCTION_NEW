@@ -1,31 +1,30 @@
-import client1 from '../../assets/images/clients/client-1.png';
-import client2 from '../../assets/images/clients/client-2.png';
-import client3 from '../../assets/images/clients/client-3.png';
-import client4 from '../../assets/images/clients/client-4.png';
-import client5 from '../../assets/images/clients/client-5.png';
-import client6 from '../../assets/images/clients/client-6.png';
-import client7 from '../../assets/images/clients/client-7.png';
-import client8 from '../../assets/images/clients/client-8.png';
-import client9 from '../../assets/images/clients/client-9.png';
-import client10 from '../../assets/images/clients/client-10.png';
-import client11 from '../../assets/images/clients/client-11.png';
-import client12 from '../../assets/images/clients/client-12.png';
-import client13 from '../../assets/images/clients/client-13.png';
-import client14 from '../../assets/images/clients/client-14.png';
-import client15 from '../../assets/images/clients/client-15.png';
-import client16 from '../../assets/images/clients/client-16.png';
-import client17 from '../../assets/images/clients/client-17.png';
-import client18 from '../../assets/images/clients/client-18.png';
-import client19 from '../../assets/images/clients/client-19.png';
-import client20 from '../../assets/images/clients/client-20.png';
-import client21 from '../../assets/images/clients/client-21.png';
-import client22 from '../../assets/images/clients/client-22.png';
-import client23 from '../../assets/images/clients/client-23.png';
-import client24 from '../../assets/images/clients/client-24.png';
-import client25 from '../../assets/images/clients/client-25.png';
+import client1 from './logos/client-1.png';
+import client2 from './logos/client-2.png';
+import client3 from './logos/client-3.png';
+import client4 from './logos/client-4.png';
+import client5 from './logos/client-5.png';
+import client6 from './logos/client-6.png';
+import client7 from './logos/client-7.png';
+import client8 from './logos/client-8.png';
+import client9 from './logos/client-9.png';
+import client10 from './logos/client-10.png';
+import client11 from './logos/client-11.png';
+import client12 from './logos/client-12.png';
+import client13 from './logos/client-13.png';
+import client14 from './logos/client-14.png';
+import client15 from './logos/client-15.png';
+import client16 from './logos/client-16.png';
+import client17 from './logos/client-17.png';
+import client18 from './logos/client-18.png';
+import client19 from './logos/client-19.png';
+import client20 from './logos/client-20.png';
+import client21 from './logos/client-21.png';
+import client22 from './logos/client-22.png';
+import client23 from './logos/client-23.png';
+import client24 from './logos/client-24.png';
+import client25 from './logos/client-25.png';
 
-export default {
-  clients: [
+export default [
     {
       name: "HDFC",
       image: client1
@@ -41,10 +40,6 @@ export default {
     {
       name: "HDFC",
       image: client4
-    },
-    {
-      name: "HDFC",
-      image: client5
     },
     {
       name: "HDFC",
@@ -91,6 +86,10 @@ export default {
       image: client16
     },
     {
+      name: "Bouyban",
+      image: client17
+    },
+    {
       name: "HDFC",
       image: client18
     },
@@ -122,5 +121,4 @@ export default {
       name: "HDFC",
       image: client25
     }
-  ]
-};
+  ];

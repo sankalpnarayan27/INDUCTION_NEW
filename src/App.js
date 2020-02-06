@@ -6,7 +6,7 @@ import Pillars from './Sections/Pillars';
 import Locations from './Sections/Locations';
 // import XebiaGroup from "./Sections/XebiaGroup";
 // import COE from './Sections/COE';
-// import Clients from './Sections/Clients';
+import Clients from './Sections/Clients';
 // import Policy from './Sections/Policy';
 // import Tools from './Sections/Tools';
 // import LifeAtXebia from "./Sections/LifeAtXebia";
@@ -21,6 +21,7 @@ function App() {
       <Origins />
       <Pillars />
       <Locations />
+      <Clients />
     </Container>
   );
 }

@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+
+.clientsWrapper{
+  height: 100vh;
+  flex-direction: column;
+}
+
+.logoWrapper{
+  flex-direction: column;
+  height: 56rem;
+  overflow: hidden;
+}
+
+.clientCol{
+  margin-bottom: 2rem;
+}
+
+.clientRow{
+  flex-direction: row;
+}
+
+.imageRow{
+  height: 10.625rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  border: 1px solid $grey-3;
+}

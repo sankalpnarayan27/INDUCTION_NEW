@@ -1,0 +1,29 @@
+.policyWrapper{
+  align-items: center;
+  height: 100vh;
+}
+
+.policyImage{
+  position: relative;
+  img{
+    position: absolute;
+    top: -492px;
+    left: -96px;
+  }
+  h1{
+    font-size: 6.25rem;
+    position: absolute;
+    top: -110px;
+    left: -30px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    span{
+      font-size: 3.875rem;
+    }
+  }
+}
+
+.policyContentWrapper{
+  flex-direction: column;
+}

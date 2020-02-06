@@ -8,13 +8,15 @@ export default ({
   desc,
   icon,
   active,
-  handleClick
+  onClick,
+  style
 }) => {
   return (
     <Card 
       role="presentation" 
-      onClick={() => handleClick(title)} 
+      onClick={() => onClick(title)} 
       className={`${styles.xebiaCard} ${active ? styles.active : ''}`}
+      style={{...style}}
     >
       <Card.Body>
         <Image
@@ -24,9 +26,12 @@ export default ({
         <h4>
           {title}
         </h4>
-        <p>
-          {desc}
-        </p>
+        { desc && (
+            <p>
+              {desc}
+            </p>
+          )
+        } 
       </Card.Body>
     </Card>
   )

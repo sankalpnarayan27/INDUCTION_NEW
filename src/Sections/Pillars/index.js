@@ -47,7 +47,7 @@ export default () => {
                       {...cardProps}
                       role="presentation"
                       active={cardProps.title === loadedContent.title}
-                      handleClick={handleClick}
+                      onClick={handleClick}
                     />
                   </Col>
                 ))

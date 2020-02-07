@@ -35,12 +35,13 @@ export default () => {
   }
 
   return (
-    <Row className={styles.policyWrapper}>
-      <Col className={styles.policyImage}>
-        <Image
-          fluid
-          src={policy} 
-        />
+    <Row>
+      <Col 
+        className={styles.policyImage}
+        style={{
+          backgroundImage: `url("${policy}")`
+        }}
+      >
         <h1>
           the more laws, <br /> the less <span>justice</span>
         </h1>
@@ -61,7 +62,8 @@ export default () => {
                       onClick={handleClick}
                       {...item}
                       style={{
-                        marginBottom: '1.2rem'
+                        marginBottom: '1.2rem',
+                        height: '15rem'
                       }}
                     />
                   </Col>

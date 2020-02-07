@@ -1,20 +1,16 @@
-.policyWrapper{
-  align-items: center;
-  height: 100vh;
-}
 
 .policyImage{
   position: relative;
-  img{
-    position: absolute;
-    top: -492px;
-    left: -96px;
-  }
+  height: 70rem;
+  background-repeat: no-repeat;
+  background-size: contain;
   h1{
-    font-size: 6.25rem;
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
     position: absolute;
-    top: -110px;
-    left: -30px;
+    top: 17rem;
     font-weight: bold;
     color: #fff;
     text-transform: capitalize;

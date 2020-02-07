@@ -1,14 +1,12 @@
 @import "../../styles/colors.scss";
 
 .clientsWrapper{
-  height: 100vh;
   flex-direction: column;
+  padding: 7rem 0 3rem;
 }
 
 .logoWrapper{
   flex-direction: column;
-  height: 56rem;
-  overflow: hidden;
 }
 
 .clientCol{
@@ -21,6 +19,7 @@
 
 .imageRow{
   height: 10.625rem;
+  max-width: 15rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75%;

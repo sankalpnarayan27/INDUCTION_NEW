@@ -1,8 +1,10 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 
 import SectionTitle from '../../Components/SectionTitle';
 import MapContentCard from '../../Components/MapContentCard';
+
+import mapAsset from './assets/map.svg';
 
 import styles from './Locations.module.scss';
 
@@ -17,6 +19,10 @@ export default () => {
         />
       </Col>
       <Col className={styles.mapWrapper}>
+        <Image
+          src={mapAsset}
+          fluid
+        />
       </Col>
       <Col className={styles.locationContent}>
         <Row>

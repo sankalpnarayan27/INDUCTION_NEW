@@ -1,6 +1,6 @@
-import worldwide from './icons/worldwide.svg';
-import hourglass from './icons/hourglass.svg';
-import connection from './icons/connection.svg';
+import worldwide from './assets/worldwide.svg';
+import hourglass from './assets/hourglass.svg';
+import connection from './assets/connection.svg';
 
 export default [
   {

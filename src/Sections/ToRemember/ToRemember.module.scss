@@ -26,19 +26,19 @@
 }
 
 .remCard{
-  background-color: $grey-3;
+  background-color: #FBFBFB;
   color: $grey-1;
   height: 33rem;
   padding: 5rem;
   h5{
     font-size: 3.125rem;
     span{
-      font-size: 1.25rem;
+      font-size: 1rem;
       vertical-align: middle;
     }
   }
   p{
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 0.36px;
   }
 }

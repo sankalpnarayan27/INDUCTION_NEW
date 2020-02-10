@@ -42,7 +42,15 @@ const ThingsToRemember = () => {
     }
 
     return (
-      <Carousel className={styles.dropShadow} activeIndex={index} direction={direction} controls={false} interval="6000" onSelect={handleSelect} indicators>
+      <Carousel 
+        className={styles.dropShadow}
+        activeIndex={index} 
+        direction={direction} 
+        controls={false} 
+        interval="6000" 
+        onSelect={handleSelect} 
+        indicators={false}
+      >
         {
           props.CarouselItems.map(({title, subtitle, description}, i) => {
             return (

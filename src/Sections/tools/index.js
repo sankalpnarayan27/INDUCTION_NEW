@@ -10,7 +10,7 @@ import zohodesk from '../../assets/logos/zohodesk.png';
 import zohopeople from '../../assets/logos/zohopeoples.png';
 import sharepoint from '../../assets/logos/sharepoint.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { } from '@fortawesome/free-solid-svg-icons';
+import { faGooglePlay, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
 
 import SectionTitle from '../../Components/SectionTitle';
 
@@ -103,7 +103,7 @@ export default () => {
         <Row>
           {
             toolsData.map(tool => (
-              <Col md={3}>
+              <Col md={3} key={tool.logo}>
                 <div className={styles.toolCard}>
                   <div className={styles.cardImage}>
                     <Image src={tool.logo} fluid />
@@ -112,6 +112,19 @@ export default () => {
                     <p>
                       {tool.desc}
                     </p>
+                  </div>
+                  <div className={styles.appLink}>
+                    Available On:
+                    <a href={tool.appLinks.ios}>
+                      <span>
+                        <FontAwesomeIcon icon={faAppStoreIos} />
+                      </span>
+                    </a>
+                    <a href={tool.appLinks.android}>
+                      <span>
+                        <FontAwesomeIcon icon={faGooglePlay} />
+                      </span>
+                    </a>
                   </div>
                 </div>
               </Col>

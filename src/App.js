@@ -9,7 +9,7 @@ import Locations from './Sections/Locations';
 import Clients from './Sections/Clients';
 import Policy from './Sections/Policy';
 import ThingsToRemember from './Sections/ToRemember';
-// import Tools from './Sections/Tools';
+import Tools from './Sections/Tools';
 // import LifeAtXebia from "./Sections/LifeAtXebia";
 
 import './App.scss';
@@ -24,6 +24,7 @@ function App() {
       <Clients />
       <Policy />
       <ThingsToRemember />
+      <Tools />
     </Container>
   );
 }

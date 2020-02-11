@@ -9,8 +9,8 @@ import Locations from './Sections/Locations';
 import Clients from './Sections/Clients';
 import Policy from './Sections/Policy';
 import ThingsToRemember from './Sections/ToRemember';
+import LifeAtXebia from "./Sections/LifeAtXebia";
 import Tools from './Sections/Tools';
-// import LifeAtXebia from "./Sections/LifeAtXebia";
 
 import './App.scss';
 
@@ -25,6 +25,7 @@ function App() {
       <Policy />
       <ThingsToRemember />
       <Tools />
+      <LifeAtXebia />
     </Container>
   );
 }

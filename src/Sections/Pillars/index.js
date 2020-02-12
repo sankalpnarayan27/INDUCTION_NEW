@@ -28,7 +28,7 @@ export default () => {
   }
 
   return(
-    <Row className={styles.pillarsWrapper}>
+    <Row className={styles.pillarsWrapper} id="pillars">
       <SectionTitle
         title="xebia's pillars"
       />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import XebiaCard from '../../Components/XebiaCard';
+import SectionTitle from '../../Components/SectionTitle';
 
 import styles from './Pillars.module.scss';
 
@@ -27,46 +28,53 @@ export default () => {
   }
 
   return(
-    <Row className={styles.pillarsWrapper}>
-      <Col>
+    <Row className={styles.pillarsWrapper} id="pillars">
+      <SectionTitle
+        title="xebia's pillars"
+      />
+      <Col className={styles.pillarContentWrapper}>
         <Row>
-          {
-            cardContent.map(cardProps => (
-              <Col 
-                key={cardProps.title}
-                sm={6} 
-                className={styles.cardCol}
-              >
-                <XebiaCard
-                  {...cardProps}
-                  role="presentation"
-                  active={cardProps.title === loadedContent.title}
-                  handleClick={handleClick}
-                />
+          <Col>
+            <Row>
+              {
+                cardContent.map(cardProps => (
+                  <Col 
+                    key={cardProps.title}
+                    sm={6} 
+                    className={styles.cardCol}
+                  >
+                    <XebiaCard
+                      {...cardProps}
+                      role="presentation"
+                      active={cardProps.title === loadedContent.title}
+                      onClick={handleClick}
+                    />
+                  </Col>
+                ))
+              }
+            </Row>
+          </Col>
+          <Col>
+            <Row>
+              <Col className={styles.contentCol}>
+                <Card className={styles.contentCard}>
+                  <Card.Title>
+                    {loadedContent.title}
+                  </Card.Title>
+                  <Card.Body>
+                    <ul>
+                      {
+                        loadedContent.content.map(item => (
+                          <li key={item}>
+                            {item}
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </Card.Body>
+                </Card>
               </Col>
-            ))
-          }
-        </Row>
-      </Col>
-      <Col>
-        <Row>
-          <Col className={styles.contentCol}>
-            <Card className={styles.contentCard}>
-              <Card.Title>
-                {loadedContent.title}
-              </Card.Title>
-              <Card.Body>
-                <ul>
-                  {
-                    loadedContent.content.map(item => (
-                      <li key={item}>
-                        {item}
-                      </li>
-                    ))
-                  }
-                </ul>
-              </Card.Body>
-            </Card>
+            </Row>
           </Col>
         </Row>
       </Col>

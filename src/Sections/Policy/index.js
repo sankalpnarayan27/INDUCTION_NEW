@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
+import React, { useState, Fragment } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import SectionTitle from '../../Components/SectionTitle';
 import XebiaCard from '../../Components/XebiaCard';
 import policy from './assets/policy.png';
@@ -35,44 +35,46 @@ export default () => {
   }
 
   return (
-    <Row>
-      <Col 
-        className={styles.policyImage}
-        style={{
-          backgroundImage: `url("${policy}")`
-        }}
-      >
-        <h1>
-          the more laws, <br /> the less <span>justice</span>
-        </h1>
-      </Col>
-      <Col>
-        <Row className={styles.policyContentWrapper}>
-          <Col>
-            <SectionTitle
-              title="policy" 
-            />
-          </Col>  
-          <Col>
-            <Row>
-              {
-                policyData.map(item => (
-                  <Col md={6}>
-                    <XebiaCard
-                      onClick={handleClick}
-                      {...item}
-                      style={{
-                        marginBottom: '1.2rem',
-                        height: '15rem'
-                      }}
-                    />
-                  </Col>
-                ))
-              }
-            </Row>
-          </Col>
-        </Row>
-      </Col>
-    </Row>
+    <Container fluid className="complete-width">
+      <Row>
+        <Col 
+          className={styles.policyImage}
+          style={{
+            backgroundImage: `url("${policy}")`
+          }}
+        >
+          <h1>
+            the more laws, <br /> the less <span>justice</span>
+          </h1>
+        </Col>
+        <Col>
+          <Row className={styles.policyContentWrapper}>
+            <Col>
+              <SectionTitle
+                title="policy" 
+              />
+            </Col>  
+            <Col>
+              <Row>
+                {
+                  policyData.map(item => (
+                    <Col md={6}>
+                      <XebiaCard
+                        onClick={handleClick}
+                        {...item}
+                        style={{
+                          marginBottom: '1.2rem',
+                          height: '15rem'
+                        }}
+                      />
+                    </Col>
+                  ))
+                }
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   )
 };

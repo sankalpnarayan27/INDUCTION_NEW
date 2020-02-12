@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import Welcome from './Sections/Welcome';
 import Origins from './Sections/Origins';
@@ -16,17 +16,21 @@ import './App.scss';
 
 function App() {
   return (
-    <Container fluid>
-      <Welcome />
-      <Origins />
-      <Pillars />
-      <Locations />
-      <Clients />
+    <Fragment>
+      <Container fluid>
+        <Welcome />
+        <Origins />
+        <Pillars />
+        <Locations />
+        <Clients />
+      </Container>
       <Policy />
-      <ThingsToRemember />
-      <Tools />
+      <Container>
+        <ThingsToRemember />
+        <Tools />
+      </Container>
       <LifeAtXebia />
-    </Container>
+    </Fragment>
   );
 }
 

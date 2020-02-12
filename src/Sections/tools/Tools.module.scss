@@ -5,7 +5,7 @@
 }
 
 .toolCard{
-  height: 14.5rem;
+  height: 15rem;
   position: relative;
   flex-direction: column;
   border-radius: 0.625rem;
@@ -38,11 +38,14 @@
   position: absolute;
   bottom: 8px;
   right: 8px;
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
   a{
     display: inline-block;
     margin: 0 0.4rem;
     color: #E66637;
-    font-size: 1rem;
+    font-size: 1.2rem;
     &:hover{
       color: #E66637;
     }

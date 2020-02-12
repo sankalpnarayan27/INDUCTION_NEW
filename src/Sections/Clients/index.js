@@ -1,12 +1,16 @@
-import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Row, Col, Button } from 'react-bootstrap';
 import clientsData from './clientsData';
-import { slideHorizontally } from '../../utils/slideHorizontatlly';
 import SectionTitle from '../../Components/SectionTitle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './Clients.module.scss';
 
 export default () => {
+
+  const [view, setView] = useState(0);
+
   const array = [];
   const size = 5;
   while (clientsData.length > 0) {
@@ -47,6 +51,14 @@ export default () => {
       </Col>
       <Col>
         {renderClients()}
+      </Col>
+      <Col>
+        <Button>
+          <FontAwesomeIcon icon={faChevronCircleLeft} />
+        </Button>
+        <Button>
+          <FontAwesomeIcon icon={faChevronCircleRight} />
+        </Button>
       </Col>
     </Row>
   );

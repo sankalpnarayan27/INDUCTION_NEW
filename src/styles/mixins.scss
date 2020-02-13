@@ -20,6 +20,7 @@
 
 @mixin btn-interaction($color){
   cursor: pointer;
+  transition: none !important;  
   background: $color 0% 0% no-repeat padding-box !important;
   border-color: $color !important;
 }

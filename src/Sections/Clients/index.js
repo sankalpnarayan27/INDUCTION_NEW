@@ -3,7 +3,7 @@ import { Row, Col, Button } from 'react-bootstrap';
 import clientsData from './clientsData';
 import SectionTitle from '../../Components/SectionTitle';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './Clients.module.scss';
 
@@ -52,12 +52,18 @@ export default () => {
       <Col>
         {renderClients()}
       </Col>
-      <Col>
-        <Button>
-          <FontAwesomeIcon icon={faChevronCircleLeft} />
+      <Col className={styles.buttonRow}>
+        <Button
+          type="button"
+          className={styles.clientBtn}
+        >
+          <FontAwesomeIcon icon={faChevronLeft} />
         </Button>
-        <Button>
-          <FontAwesomeIcon icon={faChevronCircleRight} />
+        <Button
+          type="button"
+          className={styles.clientBtn}
+        >
+          <FontAwesomeIcon icon={faChevronRight} />
         </Button>
       </Col>
     </Row>

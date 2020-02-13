@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import clientsData from './clientsData';
 import SectionTitle from '../../Components/SectionTitle';
@@ -9,7 +9,6 @@ import styles from './Clients.module.scss';
 
 export default () => {
 
-  const [view, setView] = useState(0);
   // grouping data for grid
   const array = [];
   const size = 5;
@@ -19,16 +18,7 @@ export default () => {
 
   const handleScroll = direction => {
     const clientele = document.getElementById('clientele');
-    // const scrollDis = document.getElementById('clientele').offsetWidth;
     clientele.scrollBy( (direction === 'right' ? clientele.offsetWidth : -clientele.offsetWidth), 0)
-    // if ( {
-    //   cliente
-    // } 
-    // if (direction === 'left') {
-    //   debugger;
-    //   console.log(clientele.scrollLeft);
-    //   clientele.scrollRight += clientele.offsetWidth;
-    // }
   }
 
   const renderClients = () => {
@@ -36,11 +26,11 @@ export default () => {
       <Row id="clientele" className={styles.logoWrapper}>
         {
           array.map((clients, index) => (
-            <Col className={styles.clientCol} key={clients.image} id={`client-col-${index}`}>
+            <Col className={styles.clientCol} key={index}>
               <Row className={styles.clientRow}>
               {
-                clients.map(({name, image}, index) => (
-                    <Col>
+                clients.map(({name, image}) => (
+                    <Col key={`${name}-${image}`}>
                       <div
                         className={styles.imageRow}
                         style={{

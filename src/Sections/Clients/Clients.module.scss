@@ -1,4 +1,5 @@
-@import "../../styles/colors.scss";
+@import "../../styles/colors";
+@import "../../styles/mixins";
 
 .clientsWrapper{
   flex-direction: column;
@@ -7,10 +8,15 @@
 
 .logoWrapper{
   flex-direction: column;
+  height: 38rem;
+  width: auto;
+  overflow: hidden;
+  scroll-behavior: smooth !important;
 }
 
 .clientCol{
   margin-bottom: 2rem;
+  max-height: 10.625rem;
 }
 
 .clientRow{
@@ -24,4 +30,28 @@
   background-position: center;
   background-size: 75%;
   border: 1px solid $grey-3;
+}
+
+.buttonRow{
+  text-align: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.clientBtn{
+  @include btn-interaction(#fff);
+  color: $grey-1 !important;
+  border: 2px solid $grey-1 !important;
+  font-size: 1rem !important;
+  height: 2.4rem;
+  width: 2.4rem;
+  text-align: center !important;
+  border-radius: 1.2rem !important;
+  padding: 0 !important;
+  svg{
+    vertical-align: middle;
+  }
+  &:hover, &:focus, &:active, &.active {
+    box-shadow: none !important;
+  }
 }

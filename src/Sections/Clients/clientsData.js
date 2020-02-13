@@ -120,5 +120,9 @@ export default [
     {
       name: "HDFC",
       image: client25
+    },
+    {
+      name: "HDFC",
+      image: client5
     }
   ];

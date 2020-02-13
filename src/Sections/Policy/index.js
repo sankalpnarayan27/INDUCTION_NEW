@@ -58,7 +58,7 @@ export default () => {
               <Row>
                 {
                   policyData.map(item => (
-                    <Col md={6}>
+                    <Col md={6} key={item.title}>
                       <XebiaCard
                         onClick={handleClick}
                         {...item}

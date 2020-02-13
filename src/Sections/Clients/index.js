@@ -10,18 +10,33 @@ import styles from './Clients.module.scss';
 export default () => {
 
   const [view, setView] = useState(0);
-
+  // grouping data for grid
   const array = [];
   const size = 5;
   while (clientsData.length > 0) {
     array.push(clientsData.splice(0, size));
   }
+
+  const handleScroll = direction => {
+    const clientele = document.getElementById('clientele');
+    // const scrollDis = document.getElementById('clientele').offsetWidth;
+    clientele.scrollBy( (direction === 'right' ? clientele.offsetWidth : -clientele.offsetWidth), 0)
+    // if ( {
+    //   cliente
+    // } 
+    // if (direction === 'left') {
+    //   debugger;
+    //   console.log(clientele.scrollLeft);
+    //   clientele.scrollRight += clientele.offsetWidth;
+    // }
+  }
+
   const renderClients = () => {
     return (
-      <Row className={styles.logoWrapper}>
+      <Row id="clientele" className={styles.logoWrapper}>
         {
           array.map((clients, index) => (
-            <Col className={styles.clientCol}>
+            <Col className={styles.clientCol} key={clients.image} id={`client-col-${index}`}>
               <Row className={styles.clientRow}>
               {
                 clients.map(({name, image}, index) => (
@@ -56,12 +71,14 @@ export default () => {
         <Button
           type="button"
           className={styles.clientBtn}
+          onClick={() => handleScroll('left')}
         >
           <FontAwesomeIcon icon={faChevronLeft} />
         </Button>
         <Button
           type="button"
           className={styles.clientBtn}
+          onClick={() => handleScroll('right')}
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </Button>

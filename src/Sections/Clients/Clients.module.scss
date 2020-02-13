@@ -11,10 +11,12 @@
   height: 38rem;
   width: auto;
   overflow: hidden;
+  scroll-behavior: smooth !important;
 }
 
 .clientCol{
   margin-bottom: 2rem;
+  max-height: 10.625rem;
 }
 
 .clientRow{

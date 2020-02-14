@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import SectionTitle from '../../Components/SectionTitle';
 import XebiaCard from '../../Components/XebiaCard';
@@ -9,10 +9,11 @@ import performance from './assets/diamond.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
+
 import styles from './Policy.module.scss';
 
 export default () => {
-  const [content, setContent] = useState(null);
+  const [content, setContent] = useState('all');
   const policyData = [
     {
       icon: leaves,
@@ -72,7 +73,7 @@ export default () => {
         ]
       },
       {
-        title: 'Paternity Leave',
+        title: 'Weekly Hours',
         content: [
           '45 hours'
         ]
@@ -80,35 +81,7 @@ export default () => {
     ]
   }
 
-  const renderAllContent = () => (
-    <Row className={styles.policyContentWrapper}>
-      <Col>
-        <SectionTitle
-          title="policy"
-        />
-      </Col>  
-      <Col>
-        <Row>
-          {
-            policyData.map(item => (
-              <Col md={6} key={item.title}>
-                <XebiaCard
-                  onClick={handleClick}
-                  {...item}
-                  style={{
-                    marginBottom: '1.2rem',
-                    height: '15rem'
-                  }}
-                />
-              </Col>
-            ))
-          }
-        </Row>
-      </Col>
-    </Row>
-  );
-
-  const policyContent = () => (
+  const leaveContent = () => (
     <Row className={styles.policyContentWrapper}>
       <Col className={styles.leavePolicyTitle}>
         <SectionTitle
@@ -117,6 +90,7 @@ export default () => {
         <Button
           type="button"
           className={styles.backBtn}
+          onClick={() => setContent('all')}
         >
           <FontAwesomeIcon icon={faArrowLeft} className={styles.backIcon}/>
         </Button>
@@ -148,9 +122,44 @@ export default () => {
     </Row>
   );
 
-  const handleClick = title =>  {
-    console.log(title)
+  const renderPolicyContent = title => {
+    switch(title){
+      case 'leaves':
+        return leaveContent();
+      default:
+        return setContent('all');
+    }
   }
+
+  const renderAllContent = () => content === 'all' ? (
+    <Row className={styles.policyContentWrapper}>
+      <Col>
+        <SectionTitle
+          title="policy"
+        />
+      </Col>  
+      <Col>
+        <Row>
+          {
+            policyData.map(item => (
+              <Col md={6} key={item.title}>
+                <XebiaCard
+                  onClick={() => setContent(item.title.split(' ')[0])}
+                  {...item}
+                  style={{
+                    marginBottom: '1.2rem',
+                    height: '15rem'
+                  }}
+                />
+              </Col>
+            ))
+          }
+        </Row>
+      </Col>
+    </Row>
+  ) : (
+    renderPolicyContent(content)
+  );
 
   return (
     <Container fluid className="complete-width">
@@ -166,7 +175,7 @@ export default () => {
           </h1>
         </Col>
         <Col>
-          { policyContent() }
+          { renderAllContent() }
         </Col>
       </Row>
     </Container>

@@ -3,6 +3,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 100vh;
   background-position: 100% 0;
   h1{
     font-size: 3.75rem;
@@ -28,4 +29,5 @@
 .lifeContentWrapper{
   flex-direction: column;
   margin-left: 10.5% !important;
+  align-items: center;
 }

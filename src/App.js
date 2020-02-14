@@ -11,6 +11,7 @@ import Policy from './Sections/Policy';
 import ThingsToRemember from './Sections/ToRemember';
 import LifeAtXebia from "./Sections/LifeAtXebia";
 import Tools from './Sections/Tools';
+import Events from './Sections/Events';
 
 import './App.scss';
 
@@ -30,6 +31,7 @@ function App() {
         <Tools />
       </Container>
       <LifeAtXebia />
+      <Events />
     </Fragment>
   );
 }

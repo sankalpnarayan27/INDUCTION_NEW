@@ -1,4 +1,7 @@
 
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
 .policyImage{
   position: relative;
   background-repeat: no-repeat;
@@ -22,4 +25,34 @@
 .policyContentWrapper{
   flex-direction: column;
   margin-right: 10.5% !important;
+}
+
+.leavePolicyTitle{
+  position: relative;
+}
+
+.policyItems{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  h1{
+    font-size: 2rem;
+    display: block; 
+  }
+}
+
+.backBtn{
+  @include btn-interaction(#fff);
+  box-shadow: none !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.backIcon{
+  color: $grey-1;
+  font-size: 1.5rem;
 }

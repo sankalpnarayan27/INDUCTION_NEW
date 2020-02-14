@@ -6,6 +6,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 100vh;
   h1{
     font-size: 3.75rem;
     font-weight: bold;
@@ -42,6 +43,25 @@
   }
 }
 
+.leaveCard{
+  color: $grey-1;
+  height: 12.75rem;
+  margin-bottom: 1.5rem;
+  h5{
+    font-size: 1.5rem;
+  }
+  ul{
+    font-size: 1rem;
+    margin-top: 1.125rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+    max-height: calc(100% - 114px);
+    li{
+      margin-bottom: 10px;
+    }
+  }
+}
+
 .backBtn{
   @include btn-interaction(#fff);
   box-shadow: none !important;
@@ -55,4 +75,9 @@
 .backIcon{
   color: $grey-1;
   font-size: 1.5rem;
+}
+
+.leaveListWrapper{
+  height: calc(100vh - 7.125rem);
+  overflow-y: scroll;
 }

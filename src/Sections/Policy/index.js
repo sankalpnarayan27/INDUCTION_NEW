@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import SectionTitle from '../../Components/SectionTitle';
 import XebiaCard from '../../Components/XebiaCard';
 import policy from './assets/policy.png';
@@ -27,6 +27,58 @@ export default () => {
       title: 'performance management'
     }
   ];
+
+  const contentData = {
+    leaves: [
+      {
+        title: 'Earned Leaves',
+        content: [
+          '15 in a year',
+          'Max 30 accumulated'
+        ]
+      },
+      {
+        title: 'Casual/Sick Leaves',
+        content: [
+          '11 in a year',
+          'Lapse at the end of the year'
+        ]
+      },
+      {
+        title: 'Birthday/Anniversary',
+        content: [
+          '1 in a year',
+          'For Birthday or Anniversary'
+        ]
+      },
+      {
+        title: 'Gift a leave',
+        content: [
+          'Employees can gift max 3 EL to other employee',
+          'Only incase of exception crisis situation'
+        ]
+      },
+      {
+        title: 'Paternity Leave',
+        content: [
+          '11 in a year',
+          'Lapse at the end of the year'
+        ]
+      },
+      {
+        title: 'Maternity Leave',
+        content: [
+          '26 weeks'
+        ]
+      },
+      {
+        title: 'Paternity Leave',
+        content: [
+          '45 hours'
+        ]
+      }
+    ]
+  }
 
   const renderAllContent = () => (
     <Row className={styles.policyContentWrapper}>
@@ -70,8 +122,27 @@ export default () => {
         </Button>
       </Col>  
       <Col>
-        <Row>
-          
+        <Row className={styles.leaveListWrapper}>
+          {
+            contentData.leaves.map(({title, content}) => (
+              <Col md="6" key={title}>
+                <Card className={`${styles.leaveCard} shadow-sm`}>
+                  <Card.Body>
+                    <h5>{title}</h5>
+                    <ul className={styles.leaveList}>
+                      {
+                        content.map(item => (
+                          <li key={item}>
+                            {item}
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))
+          }
         </Row>
       </Col>
     </Row>

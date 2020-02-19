@@ -2,19 +2,21 @@ import worldwide from './assets/worldwide.svg';
 import hourglass from './assets/hourglass.svg';
 import connection from './assets/connection.svg';
 
+const currentYear = new Date();
+
 export default [
   {
-    title: '1600+',
+    title: '2000+',
     desc: 'people worldwide',
     icon: connection,
   },
   {
-    title: '16',
+    title: `${currentYear.getFullYear() - 2004}+`,
     desc: 'glorious years and counting',
     icon: hourglass,
   },
   {
-    title: '12',
+    title: 17,
     desc: 'global presence',
     icon: worldwide,
   }

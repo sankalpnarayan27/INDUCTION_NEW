@@ -1,14 +1,14 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
-import outlook from '../../assets/logos/outlook.png';
-import zoho from '../../assets/logos/zoho.png';
-import slack from '../../assets/logos/slack.png';
-import dkm from '../../assets/logos/dkm.png';
-import github from '../../assets/logos/github.png';
-import jira from '../../assets/logos/jira.png';
-import zohodesk from '../../assets/logos/zohodesk.png';
-import zohopeople from '../../assets/logos/zohopeoples.png';
-import sharepoint from '../../assets/logos/sharepoint.png';
+import outlook from './assets/outlook.png';
+import zoho from './assets/zoho.png';
+import slack from './assets/slack.png';
+import dkm from './assets/dkm.png';
+import github from './assets/github.png';
+import jira from './assets/jira.png';
+import zohodesk from './assets/zohodesk.png';
+import zohopeople from './assets/zohopeoples.png';
+import sharepoint from './assets/sharepoint.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGooglePlay, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
 

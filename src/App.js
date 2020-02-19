@@ -26,12 +26,14 @@ function App() {
         <Clients />
       </Container>
       <Policy />
-      <Container>
+      <Container fluid>
         <ThingsToRemember />
         <Tools />
       </Container>
       <LifeAtXebia />
-      <Events />
+      <Container fluid>
+        <Events />
+      </Container>
     </Fragment>
   );
 }

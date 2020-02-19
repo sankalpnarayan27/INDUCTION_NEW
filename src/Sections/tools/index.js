@@ -9,6 +9,7 @@ import jira from './assets/jira.png';
 import zohodesk from './assets/zohodesk.png';
 import zohopeople from './assets/zohopeoples.png';
 import sharepoint from './assets/sharepoint.png';
+import dotsBg from './assets/dots.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGooglePlay, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
 
@@ -93,7 +94,9 @@ const toolsData = [
 
 export default () => {
   return (
-    <Row className={styles.toolsWrapper}>
+    <Row className={styles.toolsWrapper} style={{
+      backgroundImage: `url("${dotsBg}")`
+    }}>
       <Col>
         <SectionTitle
           title="Day to Day tools"

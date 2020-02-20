@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 import SectionTitle from '../../Components/SectionTitle';
 import XebiaCard from '../../Components/XebiaCard';
 import party from './assets/party.png';
@@ -7,14 +8,21 @@ import calendar from './assets/calendar.svg';
 import gallery from './assets/gallery.svg';
 import cares from './assets/cares.svg';
 
+import galleryImages from './galleryImages';
+
 import styles from './Life.module.scss';
 
 export default () => {
-  const [content, setContent] = useState(null);
+  const [showGallery, setShowGallery] = useState(false);
+  const galleryData = galleryImages.reduce((state, payload) => {
+    return state.concat({
+      source: payload
+    });
+  } ,[])
   const policyData = [
     {
       icon: calendar,
-      title: 'events  '
+      title: 'events'
     },
     {
       icon: gallery,
@@ -22,13 +30,35 @@ export default () => {
     },
     {
       icon: cares,
-      title: 'Cares'
+      title: 'cares'
     }
   ];
 
+  const renderGallery = () => {
+    return (
+      <ModalGateway>
+        {
+          showGallery ? (
+            <Modal onClose={() => setShowGallery(false)}>
+              <Carousel 
+                views={galleryData}
+                isFullscreen
+              />
+            </Modal>
+          ) : null
+        }
+      </ModalGateway>
+    );
+  }
 
   const handleClick = title =>  {
-    console.log(title)
+    switch(title){
+      case 'gallery':
+        console.log('here');
+        return setShowGallery(true);
+      default: 
+        break;
+    }
   }
 
   return (
@@ -71,6 +101,7 @@ export default () => {
             a little party <br /> never <span>killed anybody</span>
           </h1>
         </Col>
+        {renderGallery()}
       </Row>
     </Container>
   )

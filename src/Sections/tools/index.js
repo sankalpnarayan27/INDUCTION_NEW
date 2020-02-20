@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import outlook from './assets/outlook.png';
 import zoho from './assets/zoho.png';
-import slack from './assets/slack.png';
+import teams from './assets/teams.png';
 import dkm from './assets/dkm.png';
 import github from './assets/github.png';
 import jira from './assets/jira.png';
@@ -51,8 +51,8 @@ const toolsData = [
     }
   },
   {
-    logo: slack,
-    desc: "Slack is Xebia's internal chat application. You are always connected with Xebians through this easy and user friendly app.",
+    logo: teams,
+    desc: "Microsoft Teams is Xebia's internal chat application. You are always connected with Xebians through this easy and user friendly app.",
     appLinks: {
       ios: '',
       android: ''

@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { Container } from 'react-bootstrap';
+import Welcome from './Sections/Welcome';
+import Origins from './Sections/Origins';
+import Pillars from './Sections/Pillars';
+import Locations from './Sections/Locations';
+// import XebiaGroup from "./Sections/XebiaGroup";
+// import COE from './Sections/COE';
+import Clients from './Sections/Clients';
+import Policy from './Sections/Policy';
+import ThingsToRemember from './Sections/ToRemember';
+import LifeAtXebia from "./Sections/LifeAtXebia";
+import Tools from './Sections/Tools';
+import Events from './Sections/Events';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Container fluid>
+        <Welcome />
+        <Origins />
+        <Pillars />
+        <Locations />
+        <Clients />
+      </Container>
+      <Policy />
+      <Container fluid>
+        <ThingsToRemember />
+        <Tools />
+      </Container>
+      <LifeAtXebia />
+      <Container fluid>
+        <Events />
+      </Container>
+    </Fragment>
   );
 }
 

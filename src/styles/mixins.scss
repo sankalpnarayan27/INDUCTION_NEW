@@ -1,0 +1,26 @@
+@import './colors';
+
+@mixin xebia-btn{
+  background: $grey-2 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 6px #00000029;
+  border-radius: 4px;
+  width: 181px;
+  height: 55px;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  border-color: $grey-2;
+  display: inline-block;
+  &:hover, &:focus, &:active, &.active {
+    @include btn-interaction($grey-2);
+    box-shadow:0px 1px 6px #00000029 !important;
+  }
+}
+
+@mixin btn-interaction($color){
+  cursor: pointer;
+  transition: none !important;  
+  background: $color 0% 0% no-repeat padding-box !important;
+  border-color: $color !important;
+}

@@ -1,0 +1,64 @@
+@import "../../styles/colors.scss";
+
+.xeGroup-container {
+  color: $grey-1;
+  header {
+    font-size: 40px;
+  }
+  .container{
+      & > div:first-child{
+          width: 600px;
+          margin: 0 auto;
+      }
+      .academy{
+        height: auto;
+        width: 80%;
+        border: 1px solid black;
+        opacity: 1;
+        transition: opacity 1s;
+        padding: 20px;
+        min-width: 800px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        margin: 0 auto;
+        & > div:first-child{
+          font-size: 2rem;
+          font-family: 'Avenir';
+          font-weight: bold;
+          color: #6A205F;
+          margin-left: 10px;
+        }
+        & > div:nth-child(2) > div, & > div:nth-child(3) > div{
+          float: left;
+        }
+        & > div:nth-child(2) > div:nth-child(2), & > div:nth-child(3) > div:nth-child(2){
+          margin: 20px;
+        }
+        & > div:nth-child(2) img, & > div:nth-child(3) img{
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+        }
+        .middleeast1, .middleeast2 {
+          width:350px;
+          float: left;
+        }
+      }
+      @media (max-width: 576px) {
+        .academy{
+          width: auto;
+          min-width: auto;
+        }
+        .academy > div:nth-child(3) {
+          margin-top: 10px;
+        }
+        .hr{
+          border-left: none !important;
+        }
+      }
+      
+  }
+  .mb-4{
+    margin-bottom: 6.5rem !important;
+  }
+}

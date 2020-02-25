@@ -1,0 +1,18 @@
+@import '../../styles/mixins';
+
+.originsWrapper{
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  svg{
+    display: block;
+    margin: 0 auto;
+    font-family: 'Poppins';
+  }
+  button{
+    @include xebia-btn();
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}

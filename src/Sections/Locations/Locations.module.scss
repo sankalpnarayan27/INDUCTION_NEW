@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+
+.locationsWrapper{
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.locationContent{
+  padding-top: 2rem;
+}
+
+.mapWrapper{
+  height: 43.75rem;
+  background-color: $grey-2;
+}
